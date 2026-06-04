@@ -1,0 +1,19 @@
+@use '../../utils/index' as *;
+
+@use "checkboxes";
+@use "inputs";
+
+
+.form-label {
+    display: block;
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: rem(20);
+    margin-bottom: rem(10);
+
+    @include media-up('xxl') {
+        font-size: rem(16);
+        line-height: rem(25);
+        margin-bottom: rem(12);
+    }
+}

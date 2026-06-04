@@ -1,0 +1,363 @@
+{% extends "src/templates/layouts/default.njk" %}
+{% set title = "Главная" %}
+
+{% block main %}
+
+    <div class="primary">
+        <div class="primary__main">
+            <div class="primary__wrapper">
+                <div class="container-fluid">
+                    <div class="primary__logo">
+                        <img src="img/primary_logo.png" class="img-cover" width="566" height="180" alt="">
+                    </div>
+                    <h1 class="primary__header">
+                        <span>Philip Martin's</span> - искусство быть собой,<br>
+                        воплощенное в каждой детали.
+                    </h1>
+                    <div class="primary__text">
+                        Итальянский бренд премиум-класса, который превращает уход за волосами в ритуал роскоши,
+                        объединяя инновациии природную силу ингредиентов.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <picture>
+            <source media="(min-width: 1024)" srcset="img/primary_bg.jpg"/>
+            <img src="img/primary_bg_sm.jpg" width="786" height="906" class="img-cover" loading="lazy" alt="">
+        </picture>
+    </div><!-- .primary -->
+
+    <div class="section">
+        <div class="vendors">
+            <div class="vendors__inner">
+                <div class="vendors__track">
+                    <div class="vendors__item">
+                        <img src="img/content/logos/logo_01.png" class="img-cover" width="320" height="160" alt="">
+                    </div>
+                    <div class="vendors__item">
+                        <img src="img/content/logos/logo_02.png" class="img-cover" width="320" height="160" alt="">
+                    </div>
+                    <div class="vendors__item">
+                        <img src="img/content/logos/logo_03.png" class="img-cover" width="320" height="160" alt="">
+                    </div>
+                    <div class="vendors__item">
+                        <img src="img/content/logos/logo_04.png" class="img-cover" width="320" height="160" alt="">
+                    </div>
+                    <div class="vendors__item">
+                        <img src="img/content/logos/logo_05.png" class="img-cover" width="320" height="160" alt="">
+                    </div>
+                    <div class="vendors__item">
+                        <img src="img/content/logos/logo_06.png" class="img-cover" width="320" height="160"alt="">
+                    </div>
+                    <div class="vendors__item">
+                        <img src="img/content/logos/logo_08.png" class="img-cover" width="320" height="160" alt="">
+                    </div>
+                    <div class="vendors__item">
+                        <img src="img/content/logos/logo_09.png" class="img-cover" width="320" height="160" alt="">
+                    </div>
+                    <div class="vendors__item">
+                        <img src="img/content/logos/logo_10.png" class="img-cover" width="320" height="160" alt="">
+                    </div>
+
+                    <div class="vendors__item">
+                        <img src="img/content/logos/logo_01.png" class="img-cover" width="320" height="160" alt="">
+                    </div>
+                    <div class="vendors__item">
+                        <img src="img/content/logos/logo_02.png" class="img-cover" width="320" height="160" alt="">
+                    </div>
+                    <div class="vendors__item">
+                        <img src="img/content/logos/logo_03.png" class="img-cover" width="320" height="160" alt="">
+                    </div>
+                    <div class="vendors__item">
+                        <img src="img/content/logos/logo_04.png" class="img-cover" width="320" height="160" alt="">
+                    </div>
+                    <div class="vendors__item">
+                        <img src="img/content/logos/logo_05.png" class="img-cover" width="320" height="160" alt="">
+                    </div>
+                    <div class="vendors__item">
+                        <img src="img/content/logos/logo_06.png" class="img-cover" width="320" height="160"alt="">
+                    </div>
+                    <div class="vendors__item">
+                        <img src="img/content/logos/logo_08.png" class="img-cover" width="320" height="160" alt="">
+                    </div>
+                    <div class="vendors__item">
+                        <img src="img/content/logos/logo_09.png" class="img-cover" width="320" height="160" alt="">
+                    </div>
+                    <div class="vendors__item">
+                        <img src="img/content/logos/logo_10.png" class="img-cover" width="320" height="160" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="swiper compilation-slider" data-compilation>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <i class="item__image">
+                                <img src="img/content/item_image_04.jpg" class="img-fluid" alt="">
+                            </i>
+                            <div class="item__content">
+                                <div class="item__heading">Домашний уход</div>
+                                <div class="item__button">
+                                    <a href="#" class="btn btn-outline-secondary">В каталог</a>
+                                </div>
+                            </div>
+                        </div><!-- .item -->
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="item">
+                            <i class="item__image">
+                                <img src="img/content/item_image_05.jpg" class="img-fluid" alt="">
+                            </i>
+                            <span class="item__title">Очищающий скраб для кожи головы Philip Martin's Scalp Scrub</span>
+                        </a><!-- .item -->
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="item">
+                            <i class="item__image">
+                                <img src="img/content/item_image_06.jpg" class="img-fluid" alt="">
+                            </i>
+                            <span class="item__title">Шампунь для стимуляции волос Philip Martin's Canapa Wash</span>
+                        </a><!-- .item -->
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="item">
+                            <i class="item__image">
+                                <img src="img/content/item_image_07.jpg" class="img-fluid" alt="">
+                            </i>
+                            <span class="item__title">Несмываемый спрей для волос Philip Martin's Fill 4 Leave-In Medium, 100 ml</span>
+                        </a><!-- .item -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- .section -->
+
+    <div class="hero">
+        <picture>
+            <source media="(min-width: 768px)" srcset="img/sale_image.jpg"/>
+            <img src="img/sale_image_sm.jpg" width="786" height="1034" class="img-cover" loading="lazy" alt="">
+        </picture>
+        <div class="hero__main hero__main--light">
+            <div class="hero__wrapper">
+                <div class="container-fluid">
+                    <div class="hero__logo">
+                        <img src="img/primary_logo.png" class="img-cover" width="566" height="180" loading="lazy" alt="">
+                    </div>
+                    <div class="hero__button">
+                        <a href="#" class="btn btn-outline-secondary">
+                            <span>Скоро в продаже</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- .hero -->
+
+    <div class="section">
+        <div class="container-fluid">
+            <div class="swiper compilation-slider" data-compilation>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" class="item">
+                            <i class="item__image">
+                                <img src="img/content/item_image_08.jpg" class="img-cover" alt="">
+                            </i>
+                            <span class="item__title">Парфюм Philip Martin's Ty</span>
+                        </a><!-- .item -->
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="item">
+                            <i class="item__image">
+                                <img src="img/content/item_image_09.jpg" class="img-cover" alt="">
+                            </i>
+                            <span class="item__title">Диффузор Philip Martin's Home In Amber</span>
+                        </a><!-- .item -->
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="item">
+                            <i class="item__image">
+                                <img src="img/content/item_image_10.jpg" class="img-cover" alt="">
+                            </i>
+                            <span class="item__title">Парфюмированная свеча Philip Martin's Fume' Candle</span>
+                        </a><!-- .item -->
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="item">
+                            <i class="item__image">
+                                <img src="img/content/item_image_11.jpg" class="img-cover" alt="">
+                            </i>
+                            <span class="item__title">Парфюм Philip Martin's Aplomb</span>
+                        </a><!-- .item -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- .section -->
+
+    <div class="hero">
+        <div class="hero__main">
+            <div class="hero__wrapper">
+                <div class="container-fluid">
+                    <div class="hero__logo">
+                        <img src="img/primary_logo.png" class="img-cover" width="566" height="180" loading="lazy" alt="">
+                    </div>
+                    <div class="hero__button">
+                        <a href="#" class="btn btn-outline-secondary">
+                            <span>Семинары</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <picture>
+            <source media="(min-width: 768px)" srcset="img/hero_home.jpg"/>
+            <img src="img/hero_home_sm.jpg" width="786" height="880" class="img-cover" loading="lazy" alt="">
+        </picture>
+    </div><!-- .hero -->
+
+    <div class="section">
+        <div class="container-fluid">
+            <div class="swiper compilation-slider" data-compilation>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div  class="item">
+                            <i class="item__image">
+                                <img src="img/content/item_image_12.jpg" class="img-cover" alt="">
+                            </i>
+                            <div class="item__content">
+                                <div class="item__heading">Профессиональный уход</div>
+                                <div class="item__button">
+                                    <a href="#" class="btn btn-outline-secondary">В каталог</a>
+                                </div>
+                            </div>
+                        </div><!-- .item -->
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="item">
+                            <i class="item__image">
+                                <img src="img/content/item_image_13.jpg" class="img-cover" alt="">
+                            </i>
+                            <span class="item__title">Краска для волос Philip Martin's Color Slide 8.0 Light Blonde</span>
+                        </a><!-- .item -->
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="item">
+                            <i class="item__image">
+                                <img src="img/content/item_image_14.jpg" class="img-cover" alt="">
+                            </i>
+                            <span class="item__title">Крем-окислитель 12% Philip Martin's Activator 40 Vol (12%)</span>
+                        </a><!-- .item -->
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="item">
+                            <i class="item__image">
+                                <img src="img/content/item_image_15.jpg" class="img-cover" alt="">
+                            </i>
+                            <span class="item__title">Профессиональный безаммиачный полуперманентный краситель Philip Martin's Glitch</span>
+                        </a><!-- .item -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- .section -->
+
+    <div class="hero">
+        <picture>
+            <source media="(min-width: 768px)" srcset="img/hero_home_2.jpg"/>
+            <img src="img/hero_home_2_sm.jpg" width="786" height="880" class="img-cover" loading="lazy" alt="">
+        </picture>
+        <div class="hero__main">
+            <div class="hero__wrapper">
+                <div class="container-fluid">
+                    <div class="hero__logo">
+                        <img src="img/primary_logo.png" class="img-cover" width="566" height="180" loading="lazy" alt="">
+                    </div>
+                    <div class="hero__button">
+                        <a href="#" class="btn btn-outline-secondary">
+                            <span>Перейти к покупкам</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- .hero -->
+
+    <div class="section">
+        <div class="container-fluid">
+            <div class="qa">
+                <div class="qa__header">
+                    <div class="qa__title">
+                        Часто<br>
+                        задаваемые<br>
+                        вопросы
+                    </div>
+                </div>
+                <div class="qa__main">
+                    <div class="qa-item open" data-spoiler>
+                        <div class="qa-item__header">
+                            <div class="qa-item__title">Кто официальный дистрибьютор Philip Martin's в Беларуси?</div>
+                            <button type="button" class="qa-item__button"  data-spoiler-control></button>
+                        </div>
+                        <div class="qa-item__content" style="display:block;" data-spoiler-content>
+                            <div class="qa-item__wrapper">
+                                <p>Официальным дистрибьютером и партнером бренда Philip Martin's в Беларуси является ООО «ПАРИТЕТ КОНЦЕПТ», УНП 692226522.</p>
+                                <p>Юридический адрес: 220062, г. Минск, ул. Тимирязева, д. 126, пом. 85. Компания - оператор магазина TAN GALLERY и прямой поставщик продукции Philip Martin's из Италии в Беларусь.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qa-item" data-spoiler>
+                        <div class="qa-item__header">
+                            <div class="qa-item__title">Где купить Philip Martin's в Минске и по Беларуси?</div>
+                            <button type="button" class="qa-item__button"  data-spoiler-control></button>
+                        </div>
+                        <div class="qa-item__content" data-spoiler-content>
+                            <div class="qa-item__wrapper">
+                                <p>Всю продукцию бренда Philip Martin's можно приобрести на официальном сайте дистрибьютора philipmartins.by, в интернет-магазине tangallery.by, а также в сети магазинов «Золотое Яблоко» и в салонах красоты — официальных партнёрах бренда.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qa-item" data-spoiler>
+                        <div class="qa-item__header">
+                            <div class="qa-item__title">Как стать партнером бренда?</div>
+                            <button type="button" class="qa-item__button"  data-spoiler-control></button>
+                        </div>
+                        <div class="qa-item__content" data-spoiler-content>
+                            <div class="qa-item__wrapper">
+                                <p>Для того, чтобы стать нашим партнерам, Вам необходимо просто связаться с нами по указанным ниже контактам и обсудить условия дальнейшего сотрудничества.</p>
+                                <p>
+                                    моб.:<br>
+                                    +375 (29) 390-93-39<br>
+                                    +375 (29) 330-93-93<br>
+                                    (Viber, WhatsApp, Telegram)
+                                </p>
+                                <p>e-mail: info@philipmartins.by</p>
+                                <p>Присоединяйтесь к числу наших партнеров прямо сейчас!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qa-item" data-spoiler>
+                        <div class="qa-item__header">
+                            <div class="qa-item__title">В чем преимущество продукции бренда Philip Martin's перед другими брендами?</div>
+                            <button type="button" class="qa-item__button"  data-spoiler-control></button>
+                        </div>
+                        <div class="qa-item__content" data-spoiler-content>
+                            <div class="qa-item__wrapper">
+                                <p>Главное преимущество Philip Martin's — это сочетание природных био-органических формул и передовых технологий. Продукция бренда не содержит токсичных химикатов, отличается высокой эффективностью, безопасностью и экологичностью.</p>
+                                <p>Итальянское качество, инновации и философия уважения к природе делают Philip Martin's уникальным выбором для профессионалов, ценящих индивидуальность и роскошь в уходе за волосами и телом.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- .section -->
+
+
+{% endblock %}
+{% block heading %}
+{% endblock %}
+{% block breadcrumb %}
+{% endblock %}

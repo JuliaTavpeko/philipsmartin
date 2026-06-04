@@ -1,0 +1,71 @@
+@use '../utils' as *;
+
+[data-spoiler] {
+
+    &.open {
+
+        .spoiler {
+
+            &__arrow {
+                transform: rotate(0deg);
+                transition: .3s;
+            }
+        }
+    }
+}
+
+[data-spoiler-control] {
+    cursor: pointer;
+}
+
+[data-spoiler-content] {
+    display: none;
+}
+
+.spoiler {
+
+    &:not(:last-child) {
+        margin-bottom: rem(20);
+    }
+
+    &__header {
+        margin: 0;
+        padding: rem(10) 0;
+        width: 100%;
+        border: none;
+        outline: none;
+        stroke: black;
+        cursor: pointer;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__arrow {
+        font-size: 0;
+        line-height: 0;
+        height: rem(8);
+        display: inline-block;
+        flex-shrink: 0;
+        transform: rotate(180deg);
+        transition: .3s;
+    }
+
+    &__title {
+        font-size: rem(18);
+        line-height: rem(24);
+        display: block;
+    }
+
+    &__content {
+        padding: rem(10);
+
+        p {
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

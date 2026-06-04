@@ -1,0 +1,58 @@
+@use '../utils' as *;
+
+.container,
+.container-md,
+.container-fluid {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: rem(16);
+    padding-right: rem(16);
+
+    @include media-up('xl') {
+
+    }
+}
+
+.container {
+
+    @include media-up('sm') {
+        max-width: rem(576)
+    }
+
+    @include media-up('md') {
+        max-width: rem(768)
+    }
+
+    @include media-up('lg') {
+        max-width: rem(1024)
+    }
+
+    @include media-up('xl') {
+        max-width: rem(1340);
+        padding-left: rem(32);
+        padding-right: rem(32);
+    }
+
+    @include media-up('xxl') {
+        max-width: rem(1440)
+    }
+
+    @include media-up('xxxl') {
+        max-width: rem(1864)
+    }
+}
+
+.container-fluid {
+    max-width: rem(1832);
+
+
+    @include media-up('xl') {
+        padding-left: rem(32);
+        padding-right: rem(32);
+    }
+}
+
+.container-md {
+    max-width: rem(924);
+}

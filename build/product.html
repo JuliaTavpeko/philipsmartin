@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Домашний уход</title>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Заголовок">
+    <meta property="og:description" content="Описание...">
+    <meta property="og:url" content="site.ru">
+    <meta property="og:image" content="assets/images/og.png">
+    <meta property="og:site_name" content="Имя сайта...">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="stylesheet" href="libs/normalize/normalize.min.css" />
+    <link rel="stylesheet" href="libs/swiper/swiper.min.css" />
+    <link rel="stylesheet" href="libs/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
+
+</head>
+
+<body>
+    <main class="main" id="main">
+
+        <header class="header">
+            <div class="container-fluid">
+                <div class="header__wrapper">
+                    <div class="header__group header__group--left">
+                        <a href="#" class="header__logo">
+                            <picture>
+                                <source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" width="574" height="76" class="img-cover" alt="">
+                            </picture>
+                        </a>
+                        <nav class="header__nav">
+                            <div class="header__item">
+                                <a href="#" class="header__link">О бренде</a>
+                            </div>
+                            <div class="header__item">
+                                <a href="#" class="header__link">Домашний уход</a>
+                            </div>
+                            <div class="header__item">
+                                <a href="#" class="header__link">Профессиональный уход</a>
+                            </div>
+                            <div class="header__item">
+                                <a href="#" class="header__link">Аксессуары для дома</a>
+                            </div>
+                            <div class="header__item">
+                                <a href="#" class="header__link">Обучение</a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="header__group header__group--right">
+                        <a href="#" class="header__link">Контакты</a>
+                        <a href="tel:+375293309393" class="header__phone">
+                            <i>
+                                <svg class="img-cover" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                                    <use href="img/sprites/sprite.svg#phone" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                </svg>
+                            </i>
+                            <span>+375 (29) 330-93-93</span>
+                        </a>
+                    </div>
+                    <button type="button" class="header__burger" data-nav-toggle></button>
+                </div>
+            </div>
+        </header>
+
+        <div class="nav">
+            <nav class="nav__primary">
+                <div class="nav__item">
+                    <a href="#" class="nav__link">О бренде</a>
+                </div>
+                <div class="nav__item">
+                    <a href="#" class="nav__link">Домашний уход</a>
+                </div>
+                <div class="nav__item">
+                    <a href="#" class="nav__link">Профессиональный уход</a>
+                </div>
+                <div class="nav__item">
+                    <a href="#" class="nav__link">Аксессуары для дома</a>
+                </div>
+                <div class="nav__item">
+                    <a href="#" class="nav__link">Семинары</a>
+                </div>
+            </nav>
+            <div class="nav__secondary">
+                <div class="nav__logo">
+                    <picture>
+                        <source srcset="img/footer_logo.webp" type="image/webp"><img src="img/footer_logo.png" class="img-cover" width="566" height="180" alt="">
+                    </picture>
+                </div>
+            </div>
+
+            <div class="nav__info">
+                <div class="footer__section footer__section--contacts">
+                    <div class="footer__title">Наши контакты</div>
+                    <div class="footer__text">
+                        Расскажите подробнее о&nbsp;вашем запросе и&nbsp;проконсультируйтесь с&nbsp;нами по&nbsp;телефону.
+                    </div>
+                    <div class="footer__contacts">
+                        <div class="footer__address">
+                            Минск, ул. Тимирязева, д. 126, пом. 85
+                        </div>
+                        <ul class="footer__phones">
+                            <li>
+                                <a href="tel:+375293909339" class="footer__phone">+375 (29) 390-93-39</a>
+                            </li>
+                            <li>
+                                <a href="tel:+375293909339" class="footer__phone">+375 (29) 390-93-39</a>
+                            </li>
+                        </ul>
+                        <div class="footer__messengers">
+                            <a href="#" class="btn-messenger">
+                                <svg class="img-cover" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/sprites/sprite.svg#icon_tg" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="btn-messenger">
+                                <svg class="img-cover" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/sprites/sprite.svg#icon_viber" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="btn-messenger">
+                                <svg class="img-cover" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/sprites/sprite.svg#icon_whatsapp" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="footer__email">
+                            <a href="mailto:info@tangallery.by">info@tangallery.by</a>
+                        </div>
+                        <div class="footer__docs">
+                            Реквизиты (<a href="#">Скачать</a>)
+                        </div>
+                    </div>
+                    <div class=""></div>
+                </div><!-- .footer__section -->
+                <div class="footer__section footer__section--form">
+                    <div class="footer__title">Форма обратной связи</div>
+                    <div class="footer__form">
+                        <form>
+                            <div class="footer__field">
+                                <label class="form-label" for="footer_name">Привет, меня зовут *</label>
+                                <input type="text" class="field" name="name" id="footer_name" placeholder="Александра">
+                            </div>
+                            <div class="footer__field">
+                                <label class="form-label" for="footer_phone">Свяжитесь со мной по телефону*</label>
+                                <input type="text" class="field" name="phone" id="footer_phone" placeholder="+ XXX (XX) XXX XX XX">
+                            </div>
+                            <div class="footer__field">
+                                <label class="form-label" for="footer_email">Или по электронной почте</label>
+                                <input type="text" class="field" name="email" id="footer_email" placeholder="info@likeit.pro">
+                            </div>
+                            <div class="footer__field">
+                                <label class="checkbox checkbox--white">
+                                    <input type="checkbox" class="checkbox__input" checked>
+                                    <i class="checkbox__item"></i>
+                                    <span class="checkbox__label">Согласен на обработку <a href="#">персональныx данных*</a></span>
+                                </label>
+                            </div>
+                            <div class="footer__button">
+                                <button type="button" class="btn btn-outline-secondary">
+                                    <span>Отправить заявку</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div><!-- .footer__section -->
+                <div class="footer__section footer__section--info">
+                    <div class="footer__title">Реквизиты</div>
+                    <div class="footer__info">
+                        <p>
+                            &copy;&nbsp;2023 Общество с&nbsp;ограниченной ответственностью<br>
+                            &laquo;ПАРИТЕТ КОНЦЕПТ&raquo;
+                        </p>
+                        <p>
+                            УНП 692226522 Свидетельство о&nbsp;государственной регистрации &#8470;&nbsp;692226522
+                            выдано Минским райисполкомом 6&nbsp;июля 2023&nbsp;г.&nbsp;220062
+                            г. Минск улица Тимирязева д.&nbsp;126 помещение 85.
+                        </p>
+                        <p>В&nbsp;торговом реестре Республики Беларусь с&nbsp;5&nbsp;сентября 2024&nbsp;г.</p>
+                    </div>
+                    <ul class="footer__menu">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Карта сайта</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Политика использования файлов cookie</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Политика обработки п. д.</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="footer__dev">
+                        <img src="img/dev_logo.svg" width="220" height="22" class="img-cover" loading="lazy" alt="">
+                    </a>
+                </div><!-- .footer__section -->
+            </div>
+        </div>
+
+        <div class="breadcrumb">
+            <div class="breadcrumb__item">
+                <a href="#" class="breadcrumb__link">Главная</a>
+            </div>
+            <div class="breadcrumb__item">
+                <span class="breadcrumb__active">Домашний уход</span>
+            </div>
+        </div>
+
+        <section class="page">
+            <div class="container-fluid">
+                <div class="product">
+                    <div class="product__media">
+                        <div class="product__gallery">
+                            <div class="swiper" data-product-gallery>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="img/content/product_image_01.jpg" class="product__image" data-fancybox="gallery">
+                                            <picture>
+                                                <source srcset="img/content/product_image_01.webp" type="image/webp"><img src="img/content/product_image_01.jpg" class="img-cover" width="1160" height="1526" loading="lazy" alt="">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="img/content/product_image_02.jpg" class="product__image" data-fancybox="gallery">
+                                            <picture>
+                                                <source srcset="img/content/product_image_02.webp" type="image/webp"><img src="img/content/product_image_02.jpg" class="img-cover" width="1160" height="1526" loading="lazy" alt="">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="img/content/product_image_01.jpg" class="product__image" data-fancybox="gallery">
+                                            <picture>
+                                                <source srcset="img/content/product_image_01.webp" type="image/webp"><img src="img/content/product_image_01.jpg" class="img-cover" width="1160" height="1526" loading="lazy" alt="">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="img/content/product_image_02.jpg" class="product__image" data-fancybox="gallery">
+                                            <picture>
+                                                <source srcset="img/content/product_image_02.webp" type="image/webp"><img src="img/content/product_image_02.jpg" class="img-cover" width="1160" height="1526" loading="lazy" alt="">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination" data-product-pagination></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__main">
+                        <h1 class="product__header">
+                            Шампунь для стимуляции волос Philip Martin's Canapa Wash
+                        </h1>
+                        <div class="product__sizes">
+                            <div class="product__size">70 ml</div>
+                            <div class="product__size">140 ml</div>
+                            <div class="product__size">280 ml</div>
+                            <div class="product__size">+</div>
+                        </div>
+                        <div class="product__note">
+                            Для заказа данного товара необходимо перейти в наш <br>интернет- магазин tangallery.by
+                        </div>
+                        <div class="product__button">
+                            <a href="#" class="btn btn-lg btn-primary">
+                                <span>Заказть в интернет-магазине</span>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <div class="product-info open" data-spoiler>
+                                <div class="product-info__header">
+                                    <div class="product-info__title">Описание</div>
+                                    <button type="button" class="product-info__button" data-spoiler-control></button>
+                                </div>
+                                <div class="product-info__content" style="display:block;" data-spoiler-content>
+                                    <div class="product-info__wrapper">
+                                        <p>Philip Martin's Canapa Wash — это профессиональный итальянский шампунь-антистресс, созданный специально для стимуляции роста волос и восстановления их жизненной силы.</p>
+                                        <p>Активизирует волосяные фолликулы и улучшает микроциркуляцию кожи головы. Реструктурирует поврежденные участки волоса, делая их более прочными и эластичными. Успокаивает раздраженную кожу головы и снимает следы усталости волос. Подходит для окрашенных и осветленных волос, предотвращая вымывание пигмента.</p>
+                                        <p>Экстракт конопли богатый кератином компонент, который увлажняет кожу головы и восстанавливает структуру волос по всей длине. Экстракт гуараны действует как мощный энергетик (аналог кофеина), ускоряет обмен веществ в тканях и укрепляет луковицы. Экстракт красного винограда - сильный антиоксидант, защищающий волосы от свободных радикалов и негативного влияния внешней среды. Женьшень обладает регенерирующими свойствами, возвращая прядям природный блеск и шелковистость.</p>
+                                    </div>
+                                </div>
+                            </div><!-- .product-info -->
+                            <div class="product-info open" data-spoiler>
+                                <div class="product-info__header">
+                                    <div class="product-info__title">Преимущества</div>
+                                    <button type="button" class="product-info__button" data-spoiler-control></button>
+                                </div>
+                                <div class="product-info__content" style="display: block" data-spoiler-content>
+                                    <div class="product-info__wrapper">
+                                        <ul>
+                                            <li>увлажняет</li>
+                                            <li>очищает</li>
+                                            <li>стимулирует рост новых волос</li>
+                                            <li>придаёт упругость, мягкость и блеск</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><!-- .product-info -->
+                            <div class="product-info" data-spoiler>
+                                <div class="product-info__header">
+                                    <div class="product-info__title">Основные ингредиенты</div>
+                                    <button type="button" class="product-info__button" data-spoiler-control></button>
+                                </div>
+                                <div class="product-info__content" data-spoiler-content>
+                                    <div class="product-info__wrapper">
+                                        <ul>
+                                            <li>экстракт конопли</li>
+                                            <li>экстракт гуараны</li>
+                                            <li>экстракт красного винограда</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><!-- .product-info -->
+                            <div class="product-info" data-spoiler>
+                                <div class="product-info__header">
+                                    <div class="product-info__title">Способ применения</div>
+                                    <button type="button" class="product-info__button" data-spoiler-control></button>
+                                </div>
+                                <div class="product-info__content" data-spoiler-content>
+                                    <div class="product-info__wrapper">
+                                        <p>Нанесите небольшое количество продукта на влажную кожу головы, помассируйте и смойте.</p>
+                                    </div>
+                                </div>
+                            </div><!-- .product-info -->
+                            <div class="product-info" data-spoiler>
+                                <div class="product-info__header">
+                                    <div class="product-info__title">Состав</div>
+                                    <button type="button" class="product-info__button" data-spoiler-control></button>
+                                </div>
+                                <div class="product-info__content" data-spoiler-content>
+                                    <div class="product-info__wrapper">
+                                        <p>
+                                            Aqua (Water), Coco-Glucoside, Cocamidopropyl Betaine, Sodium C14-16 Olefin Sulfonate, Glyceryl Oleate, Erythritol, Hydrolyzed Hemp Seed Extract*, Hydrolyzed Rice Protein, Aloe Barbadensis Leaf Juice*, Cannabis Sativa Seed Extract, Panax Ginseng Root Extract* , Vitis Vinifera (Grape) Leaf Extract*, Trehalose, Paullinia Cupana Seed Extract, Pullulan, Urea, Serine, Algin, Sodium Hyaluronate, Pentylene Glycol, Disodium Lauryl Sulfosuccinate, Lauryl/Myristyl Polyricinoleate, Sodium Dehydroacetate, Glycerin, Citric Acid, Ethylhexylglycerin, Phenoxyethanol, Hydrogenated Palm Glycerides Citrate, Potassium Phosphate, Potassium Sorbate, Tocopherol, Sodium Benzoate, Glyceryl Polyacrylate, Disodium Phosphate, Caprylyl Glycol, Linalool, Limonene, Parfum (Fragrance).
+                                        </p>
+                                    </div>
+                                </div>
+                            </div><!-- .product-info -->
+                        </div>
+                    </div>
+                </div><!-- .product -->
+
+                <div class="section">
+                    <div class="section__header">Вам так же могут понравится</div>
+                    <div class="section__body">
+                        <div class="swiper compilation-slider" data-compilation>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#" class="item">
+                                        <i class="item__image">
+                                            <picture>
+                                                <source srcset="img/content/item_image_01.webp" type="image/webp"><img src="img/content/item_image_01.jpg" class="img-cover" alt="">
+                                            </picture>
+                                        </i>
+                                        <span class="item__title">Philip Martin&rsquo;s Air Lacca Mini Hairspray Medium, 100&nbsp;ml</span>
+                                    </a><!-- .item -->
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="item">
+                                        <i class="item__image">
+                                            <picture>
+                                                <source srcset="img/content/item_image_02.webp" type="image/webp"><img src="img/content/item_image_02.jpg" class="img-cover" alt="">
+                                            </picture>
+                                        </i>
+                                        <span class="item__title">Philip Martin&rsquo;s Air Lacca Mini Hairspray Medium, 100&nbsp;ml</span>
+                                    </a><!-- .item -->
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="item">
+                                        <i class="item__image">
+                                            <picture>
+                                                <source srcset="img/content/item_image_03.webp" type="image/webp"><img src="img/content/item_image_03.jpg" class="img-cover" alt="">
+                                            </picture>
+                                        </i>
+                                        <span class="item__title">Philip Martin&rsquo;s Air Lacca Mini Hairspray Medium, 100&nbsp;ml</span>
+                                    </a><!-- .item -->
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="item">
+                                        <i class="item__image">
+                                            <picture>
+                                                <source srcset="img/content/item_image_01.webp" type="image/webp"><img src="img/content/item_image_01.jpg" class="img-cover" alt="">
+                                            </picture>
+                                        </i>
+                                        <span class="item__title">Philip Martin&rsquo;s Air Lacca Mini Hairspray Medium, 100&nbsp;ml</span>
+                                    </a><!-- .item -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <a href="#" class="footer__logo">
+                    <picture>
+                        <source srcset="img/footer_logo.webp" type="image/webp"><img src="img/footer_logo.png" class="img-cover" width="566" height="180" alt="">
+                    </picture>
+                </a>
+
+                <div class="footer__main">
+                    <div class="footer__section footer__section--contacts">
+                        <div class="footer__title">Наши контакты</div>
+                        <div class="footer__text">
+                            Расскажите подробнее о&nbsp;вашем запросе и&nbsp;проконсультируйтесь с&nbsp;нами по&nbsp;телефону.
+                        </div>
+                        <div class="footer__contacts">
+                            <div class="footer__address">
+                                Минск, ул. Тимирязева, д. 126, пом. 85
+                            </div>
+                            <ul class="footer__phones">
+                                <li>
+                                    <a href="tel:+375293909339" class="footer__phone">+375 (29) 390-93-39</a>
+                                </li>
+                                <li>
+                                    <a href="tel:+375293909339" class="footer__phone">+375 (29) 390-93-39</a>
+                                </li>
+                            </ul>
+                            <div class="footer__messengers">
+                                <a href="#" class="btn-messenger">
+                                    <svg class="img-cover" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <use href="img/sprites/sprite.svg#icon_tg" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="btn-messenger">
+                                    <svg class="img-cover" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <use href="img/sprites/sprite.svg#icon_viber" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="btn-messenger">
+                                    <svg class="img-cover" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <use href="img/sprites/sprite.svg#icon_whatsapp" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="footer__email">
+                                <a href="mailto:info@tangallery.by">info@tangallery.by</a>
+                            </div>
+                            <div class="footer__docs">
+                                Реквизиты (<a href="#">Скачать</a>)
+                            </div>
+                        </div>
+                        <div class=""></div>
+                    </div><!-- .footer__section -->
+                    <div class="footer__section footer__section--form">
+                        <div class="footer__title">Форма обратной связи</div>
+                        <div class="footer__form">
+                            <form>
+                                <div class="footer__field">
+                                    <label class="form-label" for="footer_name">Привет, меня зовут *</label>
+                                    <input type="text" class="field" name="name" id="footer_name" placeholder="Александра">
+                                </div>
+                                <div class="footer__field">
+                                    <label class="form-label" for="footer_phone">Свяжитесь со мной по телефону*</label>
+                                    <input type="text" class="field" name="phone" id="footer_phone" placeholder="+ XXX (XX) XXX XX XX">
+                                </div>
+                                <div class="footer__field">
+                                    <label class="form-label" for="footer_email">Или по электронной почте</label>
+                                    <input type="text" class="field" name="email" id="footer_email" placeholder="info@likeit.pro">
+                                </div>
+                                <div class="footer__field">
+                                    <label class="checkbox checkbox--white">
+                                        <input type="checkbox" class="checkbox__input" checked>
+                                        <i class="checkbox__item"></i>
+                                        <span class="checkbox__label">Согласен на обработку <a href="#">персональныx данных*</a></span>
+                                    </label>
+                                </div>
+                                <div class="footer__button">
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <span>Отправить заявку</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div><!-- .footer__section -->
+                    <div class="footer__section footer__section--info">
+                        <div class="footer__title">Реквизиты</div>
+                        <div class="footer__info">
+                            <p>
+                                &copy;&nbsp;2023 Общество с&nbsp;ограниченной ответственностью<br>
+                                &laquo;ПАРИТЕТ КОНЦЕПТ&raquo;
+                            </p>
+                            <p>
+                                УНП 692226522 Свидетельство о&nbsp;государственной регистрации &#8470;&nbsp;692226522
+                                выдано Минским райисполкомом 6&nbsp;июля 2023&nbsp;г.&nbsp;220062
+                                г. Минск улица Тимирязева д.&nbsp;126 помещение 85.
+                            </p>
+                            <p>В&nbsp;торговом реестре Республики Беларусь с&nbsp;5&nbsp;сентября 2024&nbsp;г.</p>
+                        </div>
+                        <nav class="footer__menu">
+                            <div class="footer__item">
+                                <a href="#" class="footer__link">Карта сайта</a>
+                            </div>
+                            <div class="footer__item">
+                                <a href="#" class="footer__link">Политика использования файлов cookie</a>
+                            </div>
+                            <div class="footer__item">
+                                <a href="#" class="footer__link">Политика обработки п. д.</a>
+                            </div>
+                        </nav>
+                        <a href="#" class="footer__dev">
+                            <img src="img/dev_logo.svg" width="220" height="22" class="img-cover" loading="lazy" alt="">
+                        </a>
+                    </div><!-- .footer__section -->
+                </div>
+            </div>
+        </footer><!-- .footer -->
+
+    </main>
+    <script defer src="libs/swiper/swiper.min.js"></script>
+    <script defer src="libs/slidetoggle/slidetoggle.js"></script>
+    <script defer src="libs/fancybox/fancybox.umd.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+@use '../../utils/index' as *;
+
+.quantity {
+    display: block;
+    position: relative;
+    background: white;
+    height: rem(48);
+    padding: 0 rem(46);
+    border: 1px solid black;
+    $input-selector: "input[type=text], input[type=number]";
+
+    #{$input-selector} {
+        margin: 0;
+        width: 100%;
+        z-index: 10;
+        height: rem(46);
+        outline: none;
+        color: black;
+        text-align: center;
+        font-weight: 400;
+        font-size: rem(14);
+        line-height: rem(20);
+        padding: rem(11) 0;
+        border-radius: 0;
+        position: relative;
+        background: transparent;
+        display: block;
+        vertical-align: middle;
+        border: rem(1) solid transparent;
+
+        &::placeholder {
+            color: transparent;
+        }
+
+        &::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        &:focus,
+        &:active {
+            opacity: 1;
+            outline: none;
+
+            &::placeholder {
+                color: transparent;
+            }
+
+        }
+
+
+        &.error {
+            border-color: red !important;
+        }
+    }
+
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+        display: none;
+    }
+
+    &__button {
+        top: 0;
+        font-size: 0;
+        line-height: 0;
+        border: none;
+        outline: none;
+        width: rem(46);
+        height: rem(46);
+        background: #f5f5f5;
+        cursor: pointer;
+        position: absolute;
+        &:after,
+        &:before {
+            top: calc(50% - 1px);
+            left: calc(50% - 4px);
+            z-index: 10;
+            content: '';
+            width: 8px;
+            height: 1px;
+            background: black;
+            position: absolute;
+        }
+
+        &--minus {
+            left: 0;
+        }
+
+        &--plus {
+            right: 0;
+
+            &:after {
+                transform: rotate(90deg);
+            }
+        }
+    }
+}
+

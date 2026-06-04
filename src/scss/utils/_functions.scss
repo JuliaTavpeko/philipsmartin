@@ -1,0 +1,37 @@
+@use 'sass:math';
+
+// PX to REM
+@function rem($px, $context: 16) {
+    @return ($px / $context) * 1rem;
+}
+
+// PX to Percent
+@function percent($px, $from) {
+    @if $from == 0 {
+        @error "Нельзя делить на 0 в функции percent()";
+    }
+
+    @if unit($px) != unit($from) {
+        @warn "Единицы измерения не совпадают: #{$px} и #{$from}";
+    }
+
+    @return math.div($px, $from) * 100%;
+}
+
+
+// Генерирует цвет по указанной яркости
+@function brig-color($color, $brightness: 0) {
+    @if $brightness == "hover" {
+        @return adjust-color($color, $lightness: -3%);
+    }
+    @if $brightness == "active" {
+        @return adjust-color($color, $lightness: -6%);
+    }
+
+    @return adjust-color($color, $lightness: 100% - ($brightness * 100%));
+}
+
+//  HEX to RGBA
+@function create-rgba($color, $opacity) {
+    @return adjust-color($color, $alpha: -1 + $opacity);
+}

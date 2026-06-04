@@ -1,0 +1,230 @@
+@use '../utils' as *;
+
+.header {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 800;
+    position: fixed;
+    background-color: black;
+
+    &__wrapper {
+        height: rem(50);
+        display: flex;
+        column-gap: rem(20);
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        display: block;
+        width: rem(210);
+    }
+
+    &__nav {
+        display: none;
+    }
+
+    &__link {
+        color: white;
+        height: rem(50);
+        font-weight: 500;
+        font-size: rem(14);
+        line-height: rem(24);
+        text-decoration: none;
+        transition: var(--transition-time);
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            color: var(--yellow);
+            text-decoration: underline;
+            transition: var(--transition-time);
+        }
+    }
+
+    &__phone {
+        color: white;
+        height: rem(50);
+        fill: var(--yellow);
+        font-weight: 600;
+        font-size: rem(16);
+        line-height: rem(24);
+        white-space: nowrap;
+        text-decoration: none;
+        display: flex;
+        column-gap: rem(10);
+        align-items: center;
+
+        i {
+            font-size: 0;
+            line-height: 0;
+            width: rem(13);
+            height: rem(13);
+            display: block;
+            transform: rotate(45deg);
+        }
+
+        &:hover {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    &__group {
+
+
+        &--left {
+            flex-grow: 1;
+        }
+
+        &--right {
+            display: none;
+
+        }
+    }
+
+    &__burger {
+        padding: 0;
+        font-size: 0;
+        line-height: 0;
+        border: none;
+        outline: none;
+        display: block;
+        width: rem(20);
+        height: rem(20);
+        cursor: pointer;
+        position: relative;
+        background-color: transparent;
+
+        &:after,
+        &:before {
+            top: calc(50% - 1px);
+            left: calc(50% - 10px);
+            width: 20px;
+            height: 2px;
+            content: '';
+            display: block;
+            position: absolute;
+            background-color: white;
+        }
+
+        &:before {
+            transform: translateY(5px);
+            transition: var(--transition-time);
+        }
+
+        &:after {
+            transform: translateY(-5px);
+            transition: var(--transition-time);
+        }
+    }
+
+    @include media-up('md') {
+    }
+
+    @include media-up('lg') {
+
+        &__group {
+
+            &--right {
+                display: flex;
+                align-items: center;
+                column-gap: rem(25);
+            }
+        }
+    }
+
+    @include media-up('xl') {
+
+        &__burger {
+            display: none;
+        }
+
+        &__group {
+
+            &--left {
+                display: grid;
+                grid-column-gap: 40px;
+                grid-template-columns: 210px 1fr;
+                align-items: center;
+                transition: grid-template-columns .45s ease;
+            }
+        }
+
+        .header__logo {
+            width: auto;
+            overflow: hidden;
+            white-space: nowrap;
+            opacity: 1;
+            transition: opacity .3s ease;
+        }
+
+        &__nav {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            column-gap: rem(20);
+            align-items: center;
+        }
+
+        &.is-fixed {
+
+            .header__group--left {
+                grid-template-columns: 0 1fr;
+            }
+
+            .header__logo {
+                opacity: 0;
+            }
+        }
+    }
+
+
+    @include media-up('xxl') {
+
+        &__group {
+
+            &--left {
+                grid-template-columns: 287px 1fr;
+            }
+        }
+
+        &__logo {
+      //      width: rem(287);
+        }
+
+        &__nav {
+            column-gap: rem(24);
+        }
+
+        &__link {
+            font-size: rem(16);
+        }
+    }
+
+    @media (min-width: 1500px) {
+
+        &__nav {
+            column-gap: rem(40);
+        }
+    }
+
+}
+
+.nav-open {
+
+    .header__burger {
+
+        &:after {
+            transform: rotate(45deg);
+            transition: var(--transition-time);
+        }
+
+        &:before {
+            transform: rotate(-45deg);
+            transition: var(--transition-time);
+        }
+    }
+}

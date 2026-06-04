@@ -1,0 +1,49 @@
+.seminar-list {
+  display: flex;
+  row-gap: 3.125rem;
+  flex-direction: column;
+}
+@media (min-width: 1280px) {
+  .seminar-list {
+    row-gap: 6.25rem;
+  }
+}
+
+.seminar {
+  font-size: 0.875rem;
+  line-height: 147%;
+  padding-bottom: 1.25rem;
+}
+.seminar__title {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 130%;
+  min-height: 3.125rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+}
+.seminar__date {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 147%;
+  margin-bottom: 1.25rem;
+}
+.seminar__info {
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+@media (min-width: 1280px) {
+  .seminar {
+    font-size: 1rem;
+  }
+  .seminar__title {
+    min-height: inherit;
+    margin-bottom: 1.5rem;
+  }
+  .seminar__date {
+    font-size: 1.25rem;
+    line-height: 147%;
+  }
+}
+/*# sourceMappingURL=seminar.css.map */

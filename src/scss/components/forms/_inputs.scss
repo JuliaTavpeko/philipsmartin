@@ -1,0 +1,70 @@
+@use '../../utils/index' as *;
+
+input:not([type=checkbox]):not([type=radio]),
+textarea,
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input, textarea {
+    outline: none;
+    &:focus:required:invalid { border-color: red }
+    &:required:valid { border-color: green }
+}
+
+:active, :hover, :focus {
+    outline: 0 !important;
+    outline-offset: 0 !important;
+}
+
+option::selection {background: #ccc;}
+option::-moz-selection {background: #ccc;}
+option::-webkit-selection {background: #ccc; color:#fff;}
+
+.field {
+    margin: 0;
+    width: 100%;
+    outline: none;
+    color: black;
+    box-shadow: none;
+    font-weight: 400;
+    font-size: rem(16);
+    line-height: rem(20);
+    padding: rem(14) rem(30);
+    background: white;
+    display: block;
+    border-radius: 0;
+    vertical-align: middle;
+    border: rem(1) solid white;
+
+    &::placeholder {
+        color: #C4C4C4;
+    }
+
+    &::-ms-clear {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+
+    &:focus,
+    &:active {
+        outline: none;
+
+        &::placeholder {
+            color:transparent;
+        }
+    }
+
+    &.error {
+        border-color: red !important;
+    }
+
+    @include media-up('xxl') {
+        font-size: rem(18);
+        line-height: rem(22);
+        padding: rem(18) rem(32);
+    }
+}

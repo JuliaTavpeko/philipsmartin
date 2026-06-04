@@ -1,0 +1,56 @@
+@use '../utils' as *;
+
+.hero {
+    position: relative;
+    text-align: center;
+
+    &__main {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 20;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.6);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &--light {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+    }
+
+    &__logo {
+        width: rem(236);
+        margin: 0 auto rem(50) auto;
+    }
+
+    @include media-up('md') {
+
+        &__logo {
+            width: rem(282);
+        }
+    }
+
+
+    @include media-up('lg') {
+
+    }
+
+    @include media-up('xl') {
+        //height: rem(400);
+        //
+        //&__media {
+        //    height: rem(400);
+        //}
+    }
+
+    @include media-up('xxl') {
+        height: rem(600);
+
+        &__media {
+            height: rem(600);
+        }
+    }
+}

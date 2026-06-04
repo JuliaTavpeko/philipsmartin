@@ -1,0 +1,350 @@
+@use '../utils' as *;
+
+.footer {
+    color: white;
+    text-align: center;
+    padding-top: rem(50);
+    padding-bottom: rem(50);
+    background-color: black;
+
+    &__logo {
+        display: block;
+        width: rem(236);
+        margin: 0 auto rem(60) auto;
+    }
+
+    &__main {
+        margin: 0 auto;
+        max-width: rem(400);
+        display: flex;
+        row-gap: rem(25);
+        flex-direction: column;
+        //display: grid;
+        //grid-row-gap: rem(24);
+        //grid-column-gap: rem(20);
+        //grid-template-columns: 1fr;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: rem(18);
+        line-height: rem(23);
+        margin-bottom: rem(10);
+    }
+
+    &__text {
+        font-size: rem(12);
+        line-height: 130%;
+        margin-bottom: rem(10);
+    }
+
+    &__contacts {
+        padding-bottom: rem(10);
+    }
+
+    &__address {
+        font-size: rem(16);
+        line-height: rem(29);
+        margin-bottom: rem(5);
+    }
+
+    &__phones {
+        padding: 0;
+        list-style: none;
+        margin: 0 0 rem(10) 0;
+        font-size: rem(18);
+        line-height: rem(28);
+    }
+
+    &__phone {
+        color: white;
+        white-space: nowrap;
+        text-decoration: none;
+
+        &:hover {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    &__messengers {
+        margin-bottom: rem(5);
+        display: flex;
+        column-gap: rem(10);
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__email {
+       font-size: rem(17);
+        line-height: rem(28);
+        margin-bottom: rem(5);
+
+        a {
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__docs {
+        font-weight: 500;
+        font-size: rem(12);
+        line-height: rem(22);
+
+        a {
+            color: var(--yellow);
+            text-decoration: underline;
+
+            &:hover {
+                color: var(--yellow);
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__field {
+        margin-bottom: rem(18);
+    }
+
+    &__button {
+        margin-top: rem(24);
+    }
+
+    &__info {
+        color: #949494;
+        font-size: rem(12);
+        line-height: normal;
+        margin-bottom: rem(12);
+
+        p {
+            margin-bottom: rem(10);
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__menu {
+        padding: 0;
+        list-style: none;
+        font-size: rem(12);
+        line-height: rem(18);
+        margin: 0 0 rem(25) 0;
+        display: flex;
+        row-gap: rem(4);
+        flex-direction: column;
+    }
+
+    &__link {
+        color: #949494;
+        text-decoration: none;
+        transition: var(--transition-time);
+
+        &:hover {
+            color: white;
+            text-decoration: none;
+            transition: var(--transition-time);
+        }
+    }
+
+    &__dev {
+        display: block;
+        width: rem(220);
+        flex-shrink: 0;
+        margin: 0 auto;
+    }
+
+    .field {
+        text-align: center;
+    }
+
+    @include media-up('sm') {
+
+    }
+
+    @include media-up('md') {
+
+    }
+
+    @include media-up('lg') {
+        text-align: left;
+
+        &__logo {
+            width: rem(283);
+        }
+
+        &__main {
+            margin: 0 rem(-10);
+            max-width: inherit;
+            flex-direction: row;
+        }
+
+        &__title {
+            font-size: rem(24);
+            line-height: rem(31);
+        }
+
+        &__section {
+            width: 33.33%;
+            flex-shrink: 0;
+            padding: 0 rem(10);
+
+            &--info {
+                order: 1;
+            }
+
+            &--contacts {
+                order: 2;
+            }
+
+            &--form {
+                order: 3;
+            }
+        }
+
+        &__dev {
+            margin: 0;
+        }
+
+        &__messengers {
+            justify-content: flex-start;
+        }
+
+        &__menu {
+            margin-bottom: rem(20);
+        }
+
+        .field {
+            text-align: left;
+        }
+    }
+
+    @include media-up('xl') {
+        padding-bottom: rem(100);
+
+        &__logo {
+            margin-bottom: rem(80);
+        }
+
+        &__contacts {
+            padding-bottom: 0;
+        }
+
+        &__title {
+            margin-bottom: rem(20);
+        }
+
+        &__text {
+            max-width: rem(540);
+            font-size: rem(16);
+            line-height: 130%;
+            margin-bottom: rem(20);
+        }
+
+        &__address {
+            font-size: rem(18);
+            line-height: rem(31);
+            margin-bottom: rem(20);
+        }
+
+        &__phones {
+            font-size: rem(20);
+            line-height: rem(30);
+            margin-bottom: rem(15);
+        }
+
+        &__messengers {
+            margin-bottom: rem(15);
+        }
+
+        &__email {
+            font-size: rem(18);
+            line-height: rem(31);
+            margin-bottom: rem(15);
+        }
+
+        &__docs {
+            font-size: rem(16);
+            line-height: rem(29);
+        }
+
+        &__info {
+            max-width: rem(540);
+            font-size: rem(14);
+            line-height: 140%;
+            margin-bottom: rem(32);
+
+            p {
+                margin-bottom: rem(21);
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &__menu {
+            row-gap: rem(1);
+            font-size: rem(14);
+            line-height: 180%;
+        }
+
+        &__dev {
+            width: rem(220);
+        }
+
+        &__info {
+
+        }
+
+        &__field {
+            margin-bottom: rem(20);
+        }
+
+        &__button {
+            margin-top: rem(40);
+        }
+    }
+
+    @include media-up('xxl') {
+
+        &__title {
+            font-size: rem(34);
+            line-height: rem(42);
+        }
+
+        &__address {
+            font-size: rem(20);
+            line-height: rem(36);
+        }
+
+        &__field {
+            margin-bottom: rem(21);
+        }
+
+        &__phones {
+            font-size: rem(24);
+            line-height: 140%;
+        }
+    }
+
+}
+
+.btn-messenger {
+    padding: 0;
+    border: none;
+    outline: none;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: rem(24);
+    height: rem(24);
+    border-radius: rem(24);
+    flex-shrink: 0;
+}

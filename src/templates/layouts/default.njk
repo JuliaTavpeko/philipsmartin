@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ title }}</title>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Заголовок">
+    <meta property="og:description" content="Описание...">
+    <meta property="og:url" content="site.ru">
+    <meta property="og:image" content="assets/images/og.png">
+    <meta property="og:site_name" content="Имя сайта...">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="stylesheet" href="libs/normalize/normalize.min.css" />
+    <link rel="stylesheet" href="libs/swiper/swiper.min.css" />
+    <link rel="stylesheet" href="libs/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    {% block pageHead %}
+    {% endblock %}
+</head>
+<body>
+<main class="main" id="main">
+    {% block header %}
+        {% include "src/templates/partials/header.njk" %}
+    {% endblock %}
+    {% block nav %}
+        {% include "src/templates/partials/nav.njk" %}
+    {% endblock %}
+    {% block breadcrumb %}
+        <div class="breadcrumb">
+            <div class="breadcrumb__item">
+                <a href="#" class="breadcrumb__link">Главная</a>
+            </div>
+            <div class="breadcrumb__item">
+                <span class="breadcrumb__active">{{ title }}</span>
+            </div>
+        </div>
+    {% endblock %}
+    {% block heading %}
+        <div class="page-heading">
+            <div class="container-fluid">
+                <h1 class="page-title">{{ title }}</h1>
+                {% if subTitle %}
+                    <div class="page-subtitle">{{ subTitle }}</div>
+                {% endif %}
+            </div>
+        </div>
+    {% endblock %}
+    {% block main %}
+        <section class="main-page">
+            <div class="container">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </section>
+    {% endblock %}
+    {% block footer %}
+        {% include "src/templates/partials/footer.njk" %}
+    {% endblock %}
+    {% block modal %}
+        {% include "src/templates/partials/modal.njk" %}
+    {% endblock %}
+
+</main>
+<script defer src="libs/swiper/swiper.min.js"></script>
+<script defer src="libs/slidetoggle/slidetoggle.js"></script>
+<script defer src="libs/fancybox/fancybox.umd.js"></script>
+<script src="js/app.js"></script>
+{% block pageScript %}{% endblock %}
+</body>
+</html>

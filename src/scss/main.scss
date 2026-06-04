@@ -1,0 +1,29 @@
+@use 'utils' as *;
+
+@use 'utils/config';
+
+// Базовые стили
+@use 'layout/fonts';
+@use 'layout/base';
+@use 'layout/helper';
+
+
+// Компоненты
+@use 'layout/content';
+@use 'components/buttons';
+@use 'components/container';
+@use 'components/spoilers';
+@use 'components/forms/forms';
+
+// Макеты
+@use 'parts/header';
+@use 'parts/footer';
+@use 'parts/nav';
+@use 'parts/breadcrumbs';
+@use 'parts/hero';
+@use 'parts/item';
+@use 'parts/seminar';
+@use 'parts/primary';
+@use 'parts/qa';
+@use 'parts/product';
+@use 'parts/vendors';

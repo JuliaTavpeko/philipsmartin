@@ -1,0 +1,28 @@
+@use '../utils' as *;
+
+@include font('Gilroy', normal, 100, '../fonts/Gilroy/Gilroy-Thin', false, true);
+@include font('Gilroy', italic, 100, '../fonts/Gilroy/Gilroy-ThinItalic', false, true);
+
+@include font('Gilroy', normal, 200, '../fonts/Gilroy/Gilroy-UltraLight', false, true);
+@include font('Gilroy', italic, 200, '../fonts/Gilroy/Gilroy-UltraLightItalic', false, true);
+
+@include font('Gilroy', normal, 300, '../fonts/Gilroy/Gilroy-Light', false, true);
+@include font('Gilroy', italic, 300, '../fonts/Gilroy/Gilroy-LightItalic', false, true);
+
+@include font('Gilroy', normal, 400, '../fonts/Gilroy/Gilroy-Regular', false, true);
+@include font('Gilroy', italic, 400, '../fonts/Gilroy/Gilroy-RegularItalic', false, true);
+
+@include font('Gilroy', normal, 500, '../fonts/Gilroy/Gilroy-Medium', false, true);
+@include font('Gilroy', italic, 500, '../fonts/Gilroy/Gilroy-MediumItalic', false, true);
+
+@include font('Gilroy', normal, 600, '../fonts/Gilroy/Gilroy-Semibold', false, true);
+@include font('Gilroy', italic, 600, '../fonts/Gilroy/Gilroy-SemiboldItalic', false, true);
+
+@include font('Gilroy', normal, 700, '../fonts/Gilroy/Gilroy-Bold', false, true);
+@include font('Gilroy', italic, 700, '../fonts/Gilroy/Gilroy-BoldItalic', false, true);
+
+@include font('Gilroy', normal, 800, '../fonts/Gilroy/Gilroy-Extrabold', false, true);
+@include font('Gilroy', italic, 800, '../fonts/Gilroy/Gilroy-Extrabold', false, true);
+
+@include font('Gilroy', normal, 800, '../fonts/Gilroy/Gilroy-Black', false, true);
+@include font('Gilroy', italic, 800, '../fonts/Gilroy/Gilroy-BlackItalic', false, true);

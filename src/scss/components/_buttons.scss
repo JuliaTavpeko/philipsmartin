@@ -1,0 +1,202 @@
+@use '../utils' as *;
+
+.btn {
+    outline: none;
+    cursor: pointer;
+    font-weight: 400;
+    min-height: rem(38);
+    font-size: rem(14);
+    line-height: rem(18);
+    padding: rem(4) rem(40);
+    user-select: none;
+    text-align: center;
+    white-space: nowrap;
+    position: relative;
+    text-decoration: none;
+    display: inline-flex;
+    column-gap: rem(10);
+    border: 1px solid;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    transition: var(--transition-time);
+
+    &:hover {
+        text-decoration: none;
+        transition: var(--transition-time);
+    }
+
+    &:active {
+    }
+
+    &:focus,
+    &.focus {
+        outline: 0;
+    }
+
+    span {
+        display: inline-block;
+    }
+
+    i {
+        font-size: 0;
+        line-height: 0;
+        display: inline-block;
+        height: rem(12);
+    }
+
+    @include media-up('xl') {
+        font-size: rem(16);
+        line-height: rem(20);
+        min-height: rem(50);
+    }
+
+    @include media-up('xxl') {
+        font-size: rem(18);
+        line-height: rem(22);
+        min-height: rem(60);
+    }
+}
+
+.btn-primary {
+    color: white;
+    border-color: black;
+    background-color: black;
+
+    &:hover {
+        color: black;
+        background-color: transparent;
+    }
+
+    &:active {
+        color: white;
+        border-color: black;
+        background-color: black;
+    }
+}
+
+.btn-lg {
+    min-height: rem(48);
+
+    @include media-up('xl') {
+        min-height: rem(60);
+    }
+}
+
+.btn-outline-primary {
+    color: black;
+    border-color: black;
+    background-color: white;
+
+    &:hover {
+        color: white;
+        background-color: black;
+    }
+
+    &:active {
+        color: black;
+        border-color: black;
+        background-color: white;
+    }
+}
+
+.btn-outline-secondary {
+    color: white;
+    border-color: white;
+    background-color: transparent;
+
+    &:hover {
+        color: black;
+        background-color: white;
+    }
+
+    &:active {
+        color: white;
+        border-color: white;
+        background-color: transparent;
+    }
+}
+
+.btn-link {
+    margin: 0;
+    padding: 0;
+    color: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    background: transparent;
+    text-decoration: underline;
+
+    &:hover {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+.load-more {
+    height: rem(38);
+    position: relative;
+
+    &__text {
+        transition: opacity .3s ease;
+    }
+
+    &__loader {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        opacity: 0;
+        visibility: hidden;
+
+        transition:
+            opacity .3s ease,
+            visibility .3s ease;
+    }
+
+    &.is-loading {
+        pointer-events: none;
+    }
+
+    &.is-loading .load-more__text {
+        opacity: 0;
+    }
+
+    &.is-loading .load-more__loader {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__spinner {
+        display: block;
+        width: 20px;
+        height: 20px;
+        border: 2px solid currentColor;
+        border-right-color: transparent;
+        border-radius: 50%;
+
+        animation: spinnerRotate 1s linear infinite;
+    }
+
+    @include media-up('xl') {
+        height: rem(50);
+    }
+
+    @include media-up('xxl') {
+        height: rem(60);
+    }
+}
+
+
+@keyframes spinnerRotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

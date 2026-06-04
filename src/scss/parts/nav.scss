@@ -1,0 +1,137 @@
+@use '../utils' as *;
+
+.nav {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: rem(50);
+    width: 100%;
+    color: white;
+    z-index: 750;
+    position: fixed;
+    background-color: black;
+    display: flex;
+    padding: rem(50) rem(15);
+    flex-direction: column;
+    overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+
+    &__primary {
+        margin-bottom: rem(50);
+        display: flex;
+        row-gap: rem(19);
+        flex-direction: column;
+    }
+
+    &__item {
+    }
+
+    &__link {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        padding: rem(12) 0;
+        font-weight: 500;
+        font-size: rem(16);
+        line-height: rem(20);
+        text-decoration: none;
+
+        &:hover {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    &__logo {
+        display: block;
+        width: rem(178);
+        margin: 0 auto;
+    }
+
+    &__secondary {
+        padding: rem(25) 0;
+        margin-bottom: rem(10);
+    }
+
+    &__info {
+        margin: 0 auto;
+        max-width: rem(400);
+        text-align: center;
+        display: flex;
+        row-gap: rem(25);
+        flex-direction: column;
+    }
+
+    @include media-up('sm') {
+
+    }
+
+    @include media-up('md') {
+
+    }
+
+    @include media-up('lg') {
+
+        &__info {
+            row-gap: rem(40);
+        }
+
+        .footer__section {
+            width: 100%;
+            padding: 0;
+        }
+
+        .footer__dev {
+            margin: 0 auto;
+        }
+
+        .footer__messengers {
+            justify-content: center;
+        }
+    }
+
+    @include media-up('xl') {
+        display: none;
+    }
+
+    @include media-up('xxl') {
+
+    }
+
+}
+
+.nav-layout {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: rem(50);
+    width: 100%;
+    z-index: 700;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+
+    @include media-up('xl') {
+        display: none;
+    }
+}
+
+.nav-open {
+    overflow: hidden;
+
+    .nav {
+        opacity: 1;
+        visibility: visible;
+        transition: .3s;
+    }
+
+    @include media-up('xl') {
+        overflow: visible;
+    }
+}

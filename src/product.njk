@@ -1,0 +1,175 @@
+{% extends "src/templates/layouts/default.njk" %}
+{% set title = "Домашний уход" %}
+
+{% block main %}
+    <section class="page">
+        <div class="container-fluid">
+            <div class="product">
+                <div class="product__media">
+                    <div class="product__gallery">
+                        <div class="swiper" data-product-gallery>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="img/content/product_image_01.jpg" class="product__image" data-fancybox="gallery">
+                                        <img src="img/content/product_image_01.jpg" class="img-cover" width="1160" height="1526" loading="lazy" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="img/content/product_image_02.jpg" class="product__image" data-fancybox="gallery">
+                                        <img src="img/content/product_image_02.jpg" class="img-cover" width="1160" height="1526" loading="lazy" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="img/content/product_image_01.jpg" class="product__image" data-fancybox="gallery">
+                                        <img src="img/content/product_image_01.jpg" class="img-cover" width="1160" height="1526" loading="lazy" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="img/content/product_image_02.jpg" class="product__image" data-fancybox="gallery">
+                                        <img src="img/content/product_image_02.jpg" class="img-cover" width="1160" height="1526" loading="lazy" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination" data-product-pagination></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__main">
+                    <h1 class="product__header">
+                        Шампунь для стимуляции волос Philip Martin's Canapa Wash
+                    </h1>
+                    <div class="product__sizes">
+                        <div class="product__size">70 ml</div>
+                        <div class="product__size">140 ml</div>
+                        <div class="product__size">280 ml</div>
+                        <div class="product__size">+</div>
+                    </div>
+                    <div class="product__note">
+                        Для заказа данного товара необходимо перейти в наш <br>интернет- магазин tangallery.by
+                    </div>
+                    <div class="product__button">
+                        <a href="#" class="btn btn-lg btn-primary">
+                            <span>Заказть в интернет-магазине</span>
+                        </a>
+                    </div>
+                    <div class="product__info">
+                        <div class="product-info open" data-spoiler>
+                            <div class="product-info__header">
+                                <div class="product-info__title">Описание</div>
+                                <button type="button" class="product-info__button" data-spoiler-control></button>
+                            </div>
+                            <div class="product-info__content" style="display:block;" data-spoiler-content>
+                                <div class="product-info__wrapper">
+                                    <p>Philip Martin's Canapa Wash — это профессиональный итальянский шампунь-антистресс, созданный специально для стимуляции роста волос и восстановления их жизненной силы.</p>
+                                    <p>Активизирует волосяные фолликулы и улучшает микроциркуляцию кожи головы. Реструктурирует поврежденные участки волоса, делая их более прочными и эластичными. Успокаивает раздраженную кожу головы и снимает следы усталости волос. Подходит для окрашенных и осветленных волос, предотвращая вымывание пигмента.</p>
+                                    <p>Экстракт конопли богатый кератином компонент, который увлажняет кожу головы и восстанавливает структуру волос по всей длине. Экстракт гуараны действует как мощный энергетик (аналог кофеина), ускоряет обмен веществ в тканях и укрепляет луковицы. Экстракт красного винограда - сильный антиоксидант, защищающий волосы от свободных радикалов и негативного влияния внешней среды. Женьшень обладает регенерирующими свойствами, возвращая прядям природный блеск и шелковистость.</p>
+                                </div>
+                            </div>
+                        </div><!-- .product-info -->
+                        <div class="product-info open" data-spoiler>
+                            <div class="product-info__header">
+                                <div class="product-info__title">Преимущества</div>
+                                <button type="button" class="product-info__button" data-spoiler-control></button>
+                            </div>
+                            <div class="product-info__content" style="display: block" data-spoiler-content>
+                                <div class="product-info__wrapper">
+                                    <ul>
+                                        <li>увлажняет</li>
+                                        <li>очищает</li>
+                                        <li>стимулирует рост новых волос</li>
+                                        <li>придаёт упругость, мягкость и блеск</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><!-- .product-info -->
+                        <div class="product-info" data-spoiler>
+                            <div class="product-info__header">
+                                <div class="product-info__title">Основные ингредиенты</div>
+                                <button type="button" class="product-info__button" data-spoiler-control></button>
+                            </div>
+                            <div class="product-info__content" data-spoiler-content>
+                                <div class="product-info__wrapper">
+                                    <ul>
+                                        <li>экстракт конопли</li>
+                                        <li>экстракт гуараны</li>
+                                        <li>экстракт красного винограда</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><!-- .product-info -->
+                        <div class="product-info" data-spoiler>
+                            <div class="product-info__header">
+                                <div class="product-info__title">Способ применения</div>
+                                <button type="button" class="product-info__button" data-spoiler-control></button>
+                            </div>
+                            <div class="product-info__content" data-spoiler-content>
+                                <div class="product-info__wrapper">
+                                    <p>Нанесите небольшое количество продукта на влажную кожу головы, помассируйте и смойте.</p>
+                                </div>
+                            </div>
+                        </div><!-- .product-info -->
+                        <div class="product-info" data-spoiler>
+                            <div class="product-info__header">
+                                <div class="product-info__title">Состав</div>
+                                <button type="button" class="product-info__button" data-spoiler-control></button>
+                            </div>
+                            <div class="product-info__content" data-spoiler-content>
+                                <div class="product-info__wrapper">
+                                    <p>
+                                        Aqua (Water), Coco-Glucoside, Cocamidopropyl Betaine, Sodium C14-16 Olefin Sulfonate, Glyceryl Oleate, Erythritol, Hydrolyzed Hemp Seed Extract*, Hydrolyzed Rice Protein, Aloe Barbadensis Leaf Juice*, Cannabis Sativa Seed Extract, Panax Ginseng Root Extract* , Vitis Vinifera (Grape) Leaf Extract*, Trehalose, Paullinia Cupana Seed Extract, Pullulan, Urea, Serine, Algin, Sodium Hyaluronate, Pentylene Glycol, Disodium Lauryl Sulfosuccinate, Lauryl/Myristyl Polyricinoleate, Sodium Dehydroacetate, Glycerin, Citric Acid, Ethylhexylglycerin, Phenoxyethanol, Hydrogenated Palm Glycerides Citrate, Potassium Phosphate, Potassium Sorbate, Tocopherol, Sodium Benzoate, Glyceryl Polyacrylate, Disodium Phosphate, Caprylyl Glycol, Linalool, Limonene, Parfum (Fragrance).
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!-- .product-info -->
+                    </div>
+                </div>
+            </div><!-- .product -->
+
+            <div class="section">
+                <div class="section__header">Вам так же могут понравится</div>
+                <div class="section__body">
+                    <div class="swiper compilation-slider" data-compilation>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="item">
+                                    <i class="item__image">
+                                        <img src="img/content/item_image_01.jpg" class="img-cover" alt="">
+                                    </i>
+                                    <span class="item__title">Philip Martin&rsquo;s Air Lacca Mini Hairspray Medium, 100&nbsp;ml</span>
+                                </a><!-- .item -->
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="item">
+                                    <i class="item__image">
+                                        <img src="img/content/item_image_02.jpg" class="img-cover" alt="">
+                                    </i>
+                                    <span class="item__title">Philip Martin&rsquo;s Air Lacca Mini Hairspray Medium, 100&nbsp;ml</span>
+                                </a><!-- .item -->
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="item">
+                                    <i class="item__image">
+                                        <img src="img/content/item_image_03.jpg" class="img-cover" alt="">
+                                    </i>
+                                    <span class="item__title">Philip Martin&rsquo;s Air Lacca Mini Hairspray Medium, 100&nbsp;ml</span>
+                                </a><!-- .item -->
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="item">
+                                    <i class="item__image">
+                                        <img src="img/content/item_image_01.jpg" class="img-cover" alt="">
+                                    </i>
+                                    <span class="item__title">Philip Martin&rsquo;s Air Lacca Mini Hairspray Medium, 100&nbsp;ml</span>
+                                </a><!-- .item -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+{% endblock %}
+
+{% block heading %}
+{% endblock %}

@@ -1,0 +1,36 @@
+@use '../utils' as *;
+
+.vendors {
+    margin-bottom: rem(50);
+
+    &__track {
+        display: flex;
+        width: max-content;
+        will-change: transform;
+    }
+
+    .swiper {
+        overflow: visible;
+    }
+
+    .swiper-wrapper {
+        transition-timing-function : linear;
+    }
+
+    &__item {
+        width: 120px;
+        margin-right: 60px;
+        flex: 0 0 auto;
+    }
+
+    @include media-up('xl') {
+        width: 160px;
+    }
+
+    @include media-up('xxl') {
+
+        &__item  {
+            margin-right: 100px;
+        }
+    }
+}

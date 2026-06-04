@@ -1,0 +1,61 @@
+@use '../utils' as *;
+
+.seminar-list {
+    display: flex;
+    row-gap: rem(50);
+    flex-direction: column;
+
+    @include media-up('xl') {
+        row-gap: rem(100);
+    }
+}
+
+.seminar {
+    font-size: rem(14);
+    line-height: 147%;
+    padding-bottom: rem(20);
+
+    &__title {
+        font-weight: 500;
+        font-size: rem(24);
+        line-height: 130%;
+        min-height: rem(50);
+        margin-bottom: rem(20);
+        display: flex;
+        align-items: center;
+    }
+
+    &__date {
+        font-weight: 600;
+        font-size: rem(18);
+        line-height: 147%;
+        margin-bottom: rem(20);
+    }
+
+    &__info {
+        font-weight: 600;
+        margin-bottom: rem(20);
+    }
+
+    &__text {
+
+    }
+
+    @include media-up('xl') {
+        font-size: rem(16);
+
+        &__title {
+            min-height: inherit;
+            margin-bottom: rem(24);
+        }
+
+        &__date {
+            font-size: rem(20);
+            line-height: 147%;
+        }
+    }
+
+    @include media-up('xxl') {
+
+    }
+}

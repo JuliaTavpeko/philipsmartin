@@ -1,0 +1,108 @@
+.item {
+  color: black;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  position: relative;
+  text-decoration: none;
+  transition: 0.3s;
+  display: flex;
+  row-gap: 0.625rem;
+  flex-direction: column;
+}
+.item__image {
+  display: block;
+  overflow: hidden;
+}
+.item__title {
+  display: block;
+}
+.item__content {
+  left: 0.625rem;
+  bottom: 1.25rem;
+  position: absolute;
+}
+.item__heading {
+  color: white;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  display: flex;
+  align-items: center;
+  min-height: 2.75rem;
+}
+.item__button {
+  margin-top: 0.625rem;
+}
+.item:hover {
+  color: black;
+  line-height: 130%;
+}
+@media (min-width: 1280px) {
+  .item {
+    font-size: 1rem;
+    line-height: 130%;
+    row-gap: 0.9375rem;
+  }
+  .item__content {
+    left: 1.25rem;
+    bottom: 1.25rem;
+  }
+}
+@media (min-width: 1420px) {
+  .item {
+    font-size: 1.125rem;
+    line-height: 130%;
+    row-gap: 1.5625rem;
+  }
+  .item__content {
+    left: 2.5rem;
+    bottom: 2.5rem;
+  }
+}
+
+.catalog-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 0.5rem;
+  grid-column-gap: 0.375rem;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+.catalog-grid .item {
+  opacity: 0;
+  -webkit-transform: translateY(12px);
+          transform: translateY(12px);
+  transition: opacity 0.35s ease, -webkit-transform 0.35s ease;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  transition: opacity 0.35s ease, transform 0.35s ease, -webkit-transform 0.35s ease;
+  will-change: opacity, transform;
+}
+.catalog-grid .item.is-visible {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+@media (min-width: 576px) {
+  .catalog-grid {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .catalog-grid {
+    grid-row-gap: 1.5rem;
+    grid-column-gap: 0.75rem;
+  }
+}
+@media (min-width: 1024px) {
+  .catalog-grid {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1280px) {
+  .catalog-grid {
+    grid-row-gap: 2.5rem;
+  }
+}
+/*# sourceMappingURL=item.css.map */

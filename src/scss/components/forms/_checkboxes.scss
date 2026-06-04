@@ -1,0 +1,89 @@
+@use '../../utils/index' as *;
+
+.checkbox {
+    color: white;
+    font-size: 0;
+    line-height: 0;
+    font-weight: 400;
+    position: relative;
+    align-items: center;
+    display: inline-flex;
+    column-gap: rem(8);
+
+    &__input {
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        visibility: hidden;
+        position: absolute;
+
+        &:checked + .checkbox__item {
+
+            &:before {
+                background: white;
+            }
+
+            &:after {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        &:disabled + .checkbox__item + .checkbox__label {
+            opacity: 0.5;
+            cursor: default;
+        }
+    }
+
+    &__item {
+        width: rem(16);
+        height: rem(16);
+        border-radius: rem(4);
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+
+        &:after {
+            z-index: 5;
+            content: '';
+            width: 10px;
+            height: 8px;
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTAnIGhlaWdodD0nOCcgdmlld0JveD0nMCAwIDEwIDgnIGZpbGw9J25vbmUnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHBhdGggZD0nTTEuNDE0MjEgMi4yNzg3Nkw0Ljc5MjMxIDUuNjU2ODVMMy4zNzgwOSA3LjA3MTA3TDAgMy42OTI5OEwxLjQxNDIxIDIuMjc4NzZaJyBmaWxsPSdibGFjaycvPjxwYXRoIGQ9J005LjAzNDk1IDEuNDE0MjFMMy4zNzgwOSA3LjA3MTA3TDEuOTYzODggNS42NTY4NUw3LjYyMDczIDBMOS4wMzQ5NSAxLjQxNDIxWicgZmlsbD0nYmxhY2snLz48L3N2Zz4=");
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0;
+            visibility: hidden;
+            flex-shrink: 0;
+        }
+    }
+
+    &__label {
+        cursor: pointer;
+        font-size: rem(13);
+        line-height: rem(16);
+        position: relative;
+        display: inline-block;
+    }
+
+    &--white {
+        color: white;
+
+        a {
+            color: var(--yellow);
+        }
+    }
+
+    @include media-up('xl') {
+
+        &__label {
+            font-size: rem(16);
+            line-height: rem(19);
+        }
+    }
+}

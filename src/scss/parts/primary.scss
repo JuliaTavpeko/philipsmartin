@@ -1,0 +1,100 @@
+
+@use '../utils' as *;
+
+.primary {
+    color: white;
+    text-align: center;
+    position: relative;
+
+    &__media {
+        display: block;
+    }
+
+    &__main {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 20;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__logo {
+        width: rem(236);
+        margin: 0 auto rem(50) auto;
+    }
+
+    &__header {
+        font-weight: 300;
+        font-size: rem(24);
+        line-height: rem(29);
+        margin-bottom: rem(25);
+
+        span {
+            color: var(--yellow);
+        }
+
+        br {
+            display: none;
+        }
+    }
+
+    &__text {
+        font-size: rem(14);
+        line-height: rem(16);
+    }
+
+    @include media-up('sm') {
+
+    }
+
+    @include media-up('md') {
+
+        &__logo {
+            width: rem(282);
+        }
+
+        &__header {
+            font-size: rem(32);
+            line-height: rem(40);
+            margin-bottom: rem(50);
+
+            br {
+                display: block;
+            }
+        }
+
+        &__text {
+            display: block;
+            max-width: rem(800);
+            font-size: rem(16);
+            line-height: 160%;
+            margin: 0 auto;
+        }
+    }
+
+    @include media-up('lg') {
+        height: rem(500);
+    }
+
+    @include media-up('xl') {
+        height: rem(600);
+
+        &__header {
+            font-size: rem(42);
+            line-height: rem(50);
+        }
+
+        &__text {
+            font-size: rem(18);
+            line-height: 160%;
+        }
+    }
+
+    @include media-up('xxl') {
+        height: rem(600);
+    }
+}
