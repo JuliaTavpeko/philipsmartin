@@ -1,0 +1,31 @@
+.vendors {
+  margin-bottom: 3.125rem;
+}
+.vendors__track {
+  display: flex;
+  width: -webkit-max-content;
+  width: max-content;
+  will-change: transform;
+}
+.vendors .swiper {
+  overflow: visible;
+}
+.vendors .swiper-wrapper {
+  transition-timing-function: linear;
+}
+.vendors__item {
+  width: 120px;
+  margin-right: 60px;
+  flex: 0 0 auto;
+}
+@media (min-width: 1280px) {
+  .vendors {
+    width: 160px;
+  }
+}
+@media (min-width: 1420px) {
+  .vendors__item {
+    margin-right: 100px;
+  }
+}
+/*# sourceMappingURL=vendors.css.map */

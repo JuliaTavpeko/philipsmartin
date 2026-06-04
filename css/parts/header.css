@@ -1,0 +1,188 @@
+.header {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 800;
+  position: fixed;
+  background-color: black;
+}
+.header__wrapper {
+  height: 3.125rem;
+  display: flex;
+  -webkit-column-gap: 1.25rem;
+     -moz-column-gap: 1.25rem;
+          column-gap: 1.25rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  display: block;
+  width: 13.125rem;
+}
+.header__nav {
+  display: none;
+}
+.header__link {
+  color: white;
+  height: 3.125rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  text-decoration: none;
+  transition: var(--transition-time);
+  display: flex;
+  align-items: center;
+}
+.header__link:hover {
+  color: var(--yellow);
+  text-decoration: underline;
+  transition: var(--transition-time);
+}
+.header__phone {
+  color: white;
+  height: 3.125rem;
+  fill: var(--yellow);
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  white-space: nowrap;
+  text-decoration: none;
+  display: flex;
+  -webkit-column-gap: 0.625rem;
+     -moz-column-gap: 0.625rem;
+          column-gap: 0.625rem;
+  align-items: center;
+}
+.header__phone i {
+  font-size: 0;
+  line-height: 0;
+  width: 0.8125rem;
+  height: 0.8125rem;
+  display: block;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.header__phone:hover {
+  color: white;
+  text-decoration: none;
+}
+.header__group--left {
+  flex-grow: 1;
+}
+.header__group--right {
+  display: none;
+}
+.header__burger {
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  border: none;
+  outline: none;
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+}
+.header__burger:after, .header__burger:before {
+  top: calc(50% - 1px);
+  left: calc(50% - 10px);
+  width: 20px;
+  height: 2px;
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: white;
+}
+.header__burger:before {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+  transition: var(--transition-time);
+}
+.header__burger:after {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  transition: var(--transition-time);
+}
+@media (min-width: 1024px) {
+  .header__group--right {
+    display: flex;
+    align-items: center;
+    -webkit-column-gap: 1.5625rem;
+       -moz-column-gap: 1.5625rem;
+            column-gap: 1.5625rem;
+  }
+}
+@media (min-width: 1280px) {
+  .header__burger {
+    display: none;
+  }
+  .header__group--left {
+    display: -ms-grid;
+    display: grid;
+    grid-column-gap: 40px;
+    -ms-grid-columns: 210px 1fr;
+    grid-template-columns: 210px 1fr;
+    align-items: center;
+    transition: grid-template-columns 0.45s ease;
+    transition: grid-template-columns 0.45s ease, -ms-grid-columns 0.45s ease;
+  }
+  .header .header__logo {
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  .header__nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    -webkit-column-gap: 1.25rem;
+       -moz-column-gap: 1.25rem;
+            column-gap: 1.25rem;
+    align-items: center;
+  }
+  .header.is-fixed .header__group--left {
+    -ms-grid-columns: 0 1fr;
+    grid-template-columns: 0 1fr;
+  }
+  .header.is-fixed .header__logo {
+    opacity: 0;
+  }
+}
+@media (min-width: 1420px) {
+  .header__group--left {
+    -ms-grid-columns: 287px 1fr;
+    grid-template-columns: 287px 1fr;
+  }
+  .header__nav {
+    -webkit-column-gap: 1.5rem;
+       -moz-column-gap: 1.5rem;
+            column-gap: 1.5rem;
+  }
+  .header__link {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1500px) {
+  .header__nav {
+    -webkit-column-gap: 2.5rem;
+       -moz-column-gap: 2.5rem;
+            column-gap: 2.5rem;
+  }
+}
+
+.nav-open .header__burger:after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  transition: var(--transition-time);
+}
+.nav-open .header__burger:before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  transition: var(--transition-time);
+}
+/*# sourceMappingURL=header.css.map */

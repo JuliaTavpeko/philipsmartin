@@ -1,0 +1,37 @@
+.hero {
+  position: relative;
+  text-align: center;
+}
+.hero__main {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero__main--light {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.hero__logo {
+  width: 14.75rem;
+  margin: 0 auto 3.125rem auto;
+}
+@media (min-width: 768px) {
+  .hero__logo {
+    width: 17.625rem;
+  }
+}
+@media (min-width: 1420px) {
+  .hero {
+    height: 37.5rem;
+  }
+  .hero__media {
+    height: 37.5rem;
+  }
+}
+/*# sourceMappingURL=hero.css.map */

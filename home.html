@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Главная</title>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Заголовок">
+    <meta property="og:description" content="Описание...">
+    <meta property="og:url" content="site.ru">
+    <meta property="og:image" content="assets/images/og.png">
+    <meta property="og:site_name" content="Имя сайта...">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="stylesheet" href="libs/normalize/normalize.min.css" />
+    <link rel="stylesheet" href="libs/swiper/swiper.min.css" />
+    <link rel="stylesheet" href="libs/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
+
+</head>
+
+<body>
+    <main class="main" id="main">
+
+        <header class="header">
+            <div class="container-fluid">
+                <div class="header__wrapper">
+                    <div class="header__group header__group--left">
+                        <a href="#" class="header__logo">
+                            <picture>
+                                <source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" width="574" height="76" class="img-cover" alt="">
+                            </picture>
+                        </a>
+                        <nav class="header__nav">
+                            <div class="header__item">
+                                <a href="#" class="header__link">О бренде</a>
+                            </div>
+                            <div class="header__item">
+                                <a href="#" class="header__link">Домашний уход</a>
+                            </div>
+                            <div class="header__item">
+                                <a href="#" class="header__link">Профессиональный уход</a>
+                            </div>
+                            <div class="header__item">
+                                <a href="#" class="header__link">Аксессуары для дома</a>
+                            </div>
+                            <div class="header__item">
+                                <a href="#" class="header__link">Обучение</a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="header__group header__group--right">
+                        <a href="#" class="header__link">Контакты</a>
+                        <a href="tel:+375293309393" class="header__phone">
+                            <i>
+                                <svg class="img-cover" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                                    <use href="img/sprites/sprite.svg#phone" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                </svg>
+                            </i>
+                            <span>+375 (29) 330-93-93</span>
+                        </a>
+                    </div>
+                    <button type="button" class="header__burger" data-nav-toggle></button>
+                </div>
+            </div>
+        </header>
+
+        <div class="nav">
+            <nav class="nav__primary">
+                <div class="nav__item">
+                    <a href="#" class="nav__link">О бренде</a>
+                </div>
+                <div class="nav__item">
+                    <a href="#" class="nav__link">Домашний уход</a>
+                </div>
+                <div class="nav__item">
+                    <a href="#" class="nav__link">Профессиональный уход</a>
+                </div>
+                <div class="nav__item">
+                    <a href="#" class="nav__link">Аксессуары для дома</a>
+                </div>
+                <div class="nav__item">
+                    <a href="#" class="nav__link">Семинары</a>
+                </div>
+            </nav>
+            <div class="nav__secondary">
+                <div class="nav__logo">
+                    <picture>
+                        <source srcset="img/footer_logo.webp" type="image/webp"><img src="img/footer_logo.png" class="img-cover" width="566" height="180" alt="">
+                    </picture>
+                </div>
+            </div>
+
+            <div class="nav__info">
+                <div class="footer__section footer__section--contacts">
+                    <div class="footer__title">Наши контакты</div>
+                    <div class="footer__text">
+                        Расскажите подробнее о&nbsp;вашем запросе и&nbsp;проконсультируйтесь с&nbsp;нами по&nbsp;телефону.
+                    </div>
+                    <div class="footer__contacts">
+                        <div class="footer__address">
+                            Минск, ул. Тимирязева, д. 126, пом. 85
+                        </div>
+                        <ul class="footer__phones">
+                            <li>
+                                <a href="tel:+375293909339" class="footer__phone">+375 (29) 390-93-39</a>
+                            </li>
+                            <li>
+                                <a href="tel:+375293909339" class="footer__phone">+375 (29) 390-93-39</a>
+                            </li>
+                        </ul>
+                        <div class="footer__messengers">
+                            <a href="#" class="btn-messenger">
+                                <svg class="img-cover" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/sprites/sprite.svg#icon_tg" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="btn-messenger">
+                                <svg class="img-cover" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/sprites/sprite.svg#icon_viber" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="btn-messenger">
+                                <svg class="img-cover" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/sprites/sprite.svg#icon_whatsapp" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="footer__email">
+                            <a href="mailto:info@tangallery.by">info@tangallery.by</a>
+                        </div>
+                        <div class="footer__docs">
+                            Реквизиты (<a href="#">Скачать</a>)
+                        </div>
+                    </div>
+                    <div class=""></div>
+                </div><!-- .footer__section -->
+                <div class="footer__section footer__section--form">
+                    <div class="footer__title">Форма обратной связи</div>
+                    <div class="footer__form">
+                        <form>
+                            <div class="footer__field">
+                                <label class="form-label" for="footer_name">Привет, меня зовут *</label>
+                                <input type="text" class="field" name="name" id="footer_name" placeholder="Александра">
+                            </div>
+                            <div class="footer__field">
+                                <label class="form-label" for="footer_phone">Свяжитесь со мной по телефону*</label>
+                                <input type="text" class="field" name="phone" id="footer_phone" placeholder="+ XXX (XX) XXX XX XX">
+                            </div>
+                            <div class="footer__field">
+                                <label class="form-label" for="footer_email">Или по электронной почте</label>
+                                <input type="text" class="field" name="email" id="footer_email" placeholder="info@likeit.pro">
+                            </div>
+                            <div class="footer__field">
+                                <label class="checkbox checkbox--white">
+                                    <input type="checkbox" class="checkbox__input" checked>
+                                    <i class="checkbox__item"></i>
+                                    <span class="checkbox__label">Согласен на обработку <a href="#">персональныx данных*</a></span>
+                                </label>
+                            </div>
+                            <div class="footer__button">
+                                <button type="button" class="btn btn-outline-secondary">
+                                    <span>Отправить заявку</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div><!-- .footer__section -->
+                <div class="footer__section footer__section--info">
+                    <div class="footer__title">Реквизиты</div>
+                    <div class="footer__info">
+                        <p>
+                            &copy;&nbsp;2023 Общество с&nbsp;ограниченной ответственностью<br>
+                            &laquo;ПАРИТЕТ КОНЦЕПТ&raquo;
+                        </p>
+                        <p>
+                            УНП 692226522 Свидетельство о&nbsp;государственной регистрации &#8470;&nbsp;692226522
+                            выдано Минским райисполкомом 6&nbsp;июля 2023&nbsp;г.&nbsp;220062
+                            г. Минск улица Тимирязева д.&nbsp;126 помещение 85.
+                        </p>
+                        <p>В&nbsp;торговом реестре Республики Беларусь с&nbsp;5&nbsp;сентября 2024&nbsp;г.</p>
+                    </div>
+                    <ul class="footer__menu">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Карта сайта</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Политика использования файлов cookie</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Политика обработки п. д.</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="footer__dev">
+                        <img src="img/dev_logo.svg" width="220" height="22" class="img-cover" loading="lazy" alt="">
+                    </a>
+                </div><!-- .footer__section -->
+            </div>
+        </div>
+
+        <div class="primary">
+            <div class="primary__main">
+                <div class="primary__wrapper">
+                    <div class="container-fluid">
+                        <div class="primary__logo">
+                            <picture>
+                                <source srcset="img/primary_logo.webp" type="image/webp"><img src="img/primary_logo.png" class="img-cover" width="566" height="180" alt="">
+                            </picture>
+                        </div>
+                        <h1 class="primary__header">
+                            <span>Philip Martin's</span> - искусство быть собой,<br>
+                            воплощенное в каждой детали.
+                        </h1>
+                        <div class="primary__text">
+                            Итальянский бренд премиум-класса, который превращает уход за волосами в ритуал роскоши,
+                            объединяя инновациии природную силу ингредиентов.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <video src="mainbanner.mp4" autoplay loop muted playsinline width="574" height="76" class="img-cover"></video>
+
+            <!--<picture>
+                <source media="(min-width: 1024)" srcset="img/primary_bg.jpg" />
+                <img src="img/primary_bg_sm.jpg" width="786" height="906" class="img-cover" loading="lazy" alt="">
+            </picture>-->
+        </div><!-- .primary -->
+
+        <div class="section">
+            <div class="vendors">
+                <div class="vendors__inner">
+                    <div class="vendors__track">
+                        <div class="vendors__item">
+                            <picture>
+                                <source srcset="img/content/logos/logo_01.webp" type="image/webp"><img src="img/content/logos/logo_01.png" class="img-cover" width="320" height="160" alt="">
+                            </picture>
+                        </div>
+                        <div class="vendors__item">
+                            <picture>
+                                <source srcset="img/content/logos/logo_02.webp" type="image/webp"><img src="img/content/logos/logo_02.png" class="img-cover" width="320" height="160" alt="">
+                            </picture>
+                        </div>
+                        <div class="vendors__item">
+                            <picture>
+                                <source srcset="img/content/logos/logo_03.webp" type="image/webp"><img src="img/content/logos/logo_03.png" class="img-cover" width="320" height="160" alt="">
+                            </picture>
+                        </div>
+                        <div class="vendors__item">
+                            <picture>
+                                <source srcset="img/content/logos/logo_04.webp" type="image/webp"><img src="img/content/logos/logo_04.png" class="img-cover" width="320" height="160" alt="">
+                            </picture>
+                        </div>
+                        <div class="vendors__item">
+                            <picture>
+                                <source srcset="img/content/logos/logo_05.webp" type="image/webp"><img src="img/content/logos/logo_05.png" class="img-cover" width="320" height="160" alt="">
+                            </picture>
+                        </div>
+                        <div class="vendors__item">
+                            <picture>
+                                <source srcset="img/content/logos/logo_06.webp" type="image/webp"><img src="img/content/logos/logo_06.png" class="img-cover" width="320" height="160" alt="">
+                            </picture>
+                        </div>
+                        <div class="vendors__item">
+                            <picture>
+                                <source srcset="img/content/logos/logo_08.webp" type="image/webp"><img src="img/content/logos/logo_08.png" class="img-cover" width="320" height="160" alt="">
+                            </picture>
+                        </div>
+                        <div class="vendors__item">
+                            <picture>
+                                <source srcset="img/content/logos/logo_09.webp" type="image/webp"><img src="img/content/logos/logo_09.png" class="img-cover" width="320" height="160" alt="">
+                            </picture>
+                        </div>
+                        <div class="vendors__item">
+                            <picture>
+                                <source srcset="img/content/logos/logo_10.webp" type="image/webp"><img src="img/content/logos/logo_10.png" class="img-cover" width="320" height="160" alt="">
+                            </picture>
+                        </div>
+
+                        <div class="vendors__item">
+                            <picture>
+                                <source srcset="img/content/logos/logo_01.webp" type="image/webp"><img src="img/content/logos/logo_01.png" class="img-cover" width="320" height="160" alt="">
+                            </picture>
+                        </div>
+                        <div class="vendors__item">
+                            <picture>
+                                <source srcset="img/content/logos/logo_02.webp" type="image/webp"><img src="img/content/logos/logo_02.png" class="img-cover" width="320" height="160" alt="">
+                            </picture>
+                        </div>
+                        <div class="vendors__item">
+                            <picture>
+                                <source srcset="img/content/logos/logo_03.webp" type="image/webp"><img src="img/content/logos/logo_03.png" class="img-cover" width="320" height="160" alt="">
+                            </picture>
+                        </div>
+                        <div class="vendors__item">
+                            <picture>
+                                <source srcset="img/content/logos/logo_04.webp" type="image/webp"><img src="img/content/logos/logo_04.png" class="img-cover" width="320" height="160" alt="">
+                            </picture>
+                        </div>
+                        <div class="vendors__item">
+                            <picture>
+                                <source srcset="img/content/logos/logo_05.webp" type="image/webp"><img src="img/content/logos/logo_05.png" class="img-cover" width="320" height="160" alt="">
+                            </picture>
+                        </div>
+                        <div class="vendors__item">
+                            <picture>
+                                <source srcset="img/content/logos/logo_06.webp" type="image/webp"><img src="img/content/logos/logo_06.png" class="img-cover" width="320" height="160" alt="">
+                            </picture>
+                        </div>
+                        <div class="vendors__item">
+                            <picture>
+                                <source srcset="img/content/logos/logo_08.webp" type="image/webp"><img src="img/content/logos/logo_08.png" class="img-cover" width="320" height="160" alt="">
+                            </picture>
+                        </div>
+                        <div class="vendors__item">
+                            <picture>
+                                <source srcset="img/content/logos/logo_09.webp" type="image/webp"><img src="img/content/logos/logo_09.png" class="img-cover" width="320" height="160" alt="">
+                            </picture>
+                        </div>
+                        <div class="vendors__item">
+                            <picture>
+                                <source srcset="img/content/logos/logo_10.webp" type="image/webp"><img src="img/content/logos/logo_10.png" class="img-cover" width="320" height="160" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="swiper compilation-slider" data-compilation>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <i class="item__image">
+                                    <picture>
+                                        <source srcset="img/content/item_image_04.webp" type="image/webp"><img src="img/content/item_image_04.jpg" class="img-fluid" alt="">
+                                    </picture>
+                                </i>
+                                <div class="item__content">
+                                    <div class="item__heading">Домашний уход</div>
+                                    <div class="item__button">
+                                        <a href="#" class="btn btn-outline-secondary">В каталог</a>
+                                    </div>
+                                </div>
+                            </div><!-- .item -->
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="item">
+                                <i class="item__image">
+                                    <picture>
+                                        <source srcset="img/content/item_image_05.webp" type="image/webp"><img src="img/content/item_image_05.jpg" class="img-fluid" alt="">
+                                    </picture>
+                                </i>
+                                <span class="item__title">Очищающий скраб для кожи головы Philip Martin's Scalp Scrub</span>
+                            </a><!-- .item -->
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="item">
+                                <i class="item__image">
+                                    <picture>
+                                        <source srcset="img/content/item_image_06.webp" type="image/webp"><img src="img/content/item_image_06.jpg" class="img-fluid" alt="">
+                                    </picture>
+                                </i>
+                                <span class="item__title">Шампунь для стимуляции волос Philip Martin's Canapa Wash</span>
+                            </a><!-- .item -->
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="item">
+                                <i class="item__image">
+                                    <picture>
+                                        <source srcset="img/content/item_image_07.webp" type="image/webp"><img src="img/content/item_image_07.jpg" class="img-fluid" alt="">
+                                    </picture>
+                                </i>
+                                <span class="item__title">Несмываемый спрей для волос Philip Martin's Fill 4 Leave-In Medium, 100 ml</span>
+                            </a><!-- .item -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- .section -->
+
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 768px)" srcset="img/sale_image.jpg" />
+                <img src="img/sale_image_sm.jpg" width="786" height="1034" class="img-cover" loading="lazy" alt="">
+            </picture>
+            <div class="hero__main hero__main--light">
+                <div class="hero__wrapper">
+                    <div class="container-fluid">
+                        <div class="hero__logo">
+                            <picture>
+                                <source srcset="img/primary_logo.webp" type="image/webp"><img src="img/primary_logo.png" class="img-cover" width="566" height="180" loading="lazy" alt="">
+                            </picture>
+                        </div>
+                        <div class="hero__button">
+                            <a href="#" class="btn btn-outline-secondary">
+                                <span>Скоро в продаже</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- .hero -->
+
+        <div class="section">
+            <div class="container-fluid">
+                <div class="swiper compilation-slider" data-compilation>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#" class="item">
+                                <i class="item__image">
+                                    <picture>
+                                        <source srcset="img/content/item_image_08.webp" type="image/webp"><img src="img/content/item_image_08.jpg" class="img-cover" alt="">
+                                    </picture>
+                                </i>
+                                <span class="item__title">Парфюм Philip Martin's Ty</span>
+                            </a><!-- .item -->
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="item">
+                                <i class="item__image">
+                                    <picture>
+                                        <source srcset="img/content/item_image_09.webp" type="image/webp"><img src="img/content/item_image_09.jpg" class="img-cover" alt="">
+                                    </picture>
+                                </i>
+                                <span class="item__title">Диффузор Philip Martin's Home In Amber</span>
+                            </a><!-- .item -->
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="item">
+                                <i class="item__image">
+                                    <picture>
+                                        <source srcset="img/content/item_image_10.webp" type="image/webp"><img src="img/content/item_image_10.jpg" class="img-cover" alt="">
+                                    </picture>
+                                </i>
+                                <span class="item__title">Парфюмированная свеча Philip Martin's Fume' Candle</span>
+                            </a><!-- .item -->
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="item">
+                                <i class="item__image">
+                                    <picture>
+                                        <source srcset="img/content/item_image_11.webp" type="image/webp"><img src="img/content/item_image_11.jpg" class="img-cover" alt="">
+                                    </picture>
+                                </i>
+                                <span class="item__title">Парфюм Philip Martin's Aplomb</span>
+                            </a><!-- .item -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- .section -->
+
+        <div class="hero">
+            <div class="hero__main">
+                <div class="hero__wrapper">
+                    <div class="container-fluid">
+                        <div class="hero__logo">
+                            <picture>
+                                <source srcset="img/primary_logo.webp" type="image/webp"><img src="img/primary_logo.png" class="img-cover" width="566" height="180" loading="lazy" alt="">
+                            </picture>
+                        </div>
+                        <div class="hero__button">
+                            <a href="#" class="btn btn-outline-secondary">
+                                <span>Семинары</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <picture>
+                <source media="(min-width: 768px)" srcset="img/hero_home.jpg" />
+                <img src="img/hero_home_sm.jpg" width="786" height="880" class="img-cover" loading="lazy" alt="">
+            </picture>
+        </div><!-- .hero -->
+
+        <div class="section">
+            <div class="container-fluid">
+                <div class="swiper compilation-slider" data-compilation>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <i class="item__image">
+                                    <picture>
+                                        <source srcset="img/content/item_image_12.webp" type="image/webp"><img src="img/content/item_image_12.jpg" class="img-cover" alt="">
+                                    </picture>
+                                </i>
+                                <div class="item__content">
+                                    <div class="item__heading">Профессиональный уход</div>
+                                    <div class="item__button">
+                                        <a href="#" class="btn btn-outline-secondary">В каталог</a>
+                                    </div>
+                                </div>
+                            </div><!-- .item -->
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="item">
+                                <i class="item__image">
+                                    <picture>
+                                        <source srcset="img/content/item_image_13.webp" type="image/webp"><img src="img/content/item_image_13.jpg" class="img-cover" alt="">
+                                    </picture>
+                                </i>
+                                <span class="item__title">Краска для волос Philip Martin's Color Slide 8.0 Light Blonde</span>
+                            </a><!-- .item -->
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="item">
+                                <i class="item__image">
+                                    <picture>
+                                        <source srcset="img/content/item_image_14.webp" type="image/webp"><img src="img/content/item_image_14.jpg" class="img-cover" alt="">
+                                    </picture>
+                                </i>
+                                <span class="item__title">Крем-окислитель 12% Philip Martin's Activator 40 Vol (12%)</span>
+                            </a><!-- .item -->
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="item">
+                                <i class="item__image">
+                                    <picture>
+                                        <source srcset="img/content/item_image_15.webp" type="image/webp"><img src="img/content/item_image_15.jpg" class="img-cover" alt="">
+                                    </picture>
+                                </i>
+                                <span class="item__title">Профессиональный безаммиачный полуперманентный краситель Philip Martin's Glitch</span>
+                            </a><!-- .item -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- .section -->
+
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 768px)" srcset="img/hero_home_2.jpg" />
+                <img src="img/hero_home_2_sm.jpg" width="786" height="880" class="img-cover" loading="lazy" alt="">
+            </picture>
+            <div class="hero__main">
+                <div class="hero__wrapper">
+                    <div class="container-fluid">
+                        <div class="hero__logo">
+                            <picture>
+                                <source srcset="img/primary_logo.webp" type="image/webp"><img src="img/primary_logo.png" class="img-cover" width="566" height="180" loading="lazy" alt="">
+                            </picture>
+                        </div>
+                        <div class="hero__button">
+                            <a href="#" class="btn btn-outline-secondary">
+                                <span>Перейти к покупкам</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- .hero -->
+
+        <div class="section">
+            <div class="container-fluid">
+                <div class="qa">
+                    <div class="qa__header">
+                        <div class="qa__title">
+                            Часто<br>
+                            задаваемые<br>
+                            вопросы
+                        </div>
+                    </div>
+                    <div class="qa__main">
+                        <div class="qa-item open" data-spoiler>
+                            <div class="qa-item__header">
+                                <div class="qa-item__title">Кто официальный дистрибьютор Philip Martin's в Беларуси?</div>
+                                <button type="button" class="qa-item__button" data-spoiler-control></button>
+                            </div>
+                            <div class="qa-item__content" style="display:block;" data-spoiler-content>
+                                <div class="qa-item__wrapper">
+                                    <p>Официальным дистрибьютером и партнером бренда Philip Martin's в Беларуси является ООО «ПАРИТЕТ КОНЦЕПТ», УНП 692226522.</p>
+                                    <p>Юридический адрес: 220062, г. Минск, ул. Тимирязева, д. 126, пом. 85. Компания - оператор магазина TAN GALLERY и прямой поставщик продукции Philip Martin's из Италии в Беларусь.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qa-item" data-spoiler>
+                            <div class="qa-item__header">
+                                <div class="qa-item__title">Где купить Philip Martin's в Минске и по Беларуси?</div>
+                                <button type="button" class="qa-item__button" data-spoiler-control></button>
+                            </div>
+                            <div class="qa-item__content" data-spoiler-content>
+                                <div class="qa-item__wrapper">
+                                    <p>Всю продукцию бренда Philip Martin's можно приобрести на официальном сайте дистрибьютора philipmartins.by, в интернет-магазине tangallery.by, а также в сети магазинов «Золотое Яблоко» и в салонах красоты — официальных партнёрах бренда.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qa-item" data-spoiler>
+                            <div class="qa-item__header">
+                                <div class="qa-item__title">Как стать партнером бренда?</div>
+                                <button type="button" class="qa-item__button" data-spoiler-control></button>
+                            </div>
+                            <div class="qa-item__content" data-spoiler-content>
+                                <div class="qa-item__wrapper">
+                                    <p>Для того, чтобы стать нашим партнерам, Вам необходимо просто связаться с нами по указанным ниже контактам и обсудить условия дальнейшего сотрудничества.</p>
+                                    <p>
+                                        моб.:<br>
+                                        +375 (29) 390-93-39<br>
+                                        +375 (29) 330-93-93<br>
+                                        (Viber, WhatsApp, Telegram)
+                                    </p>
+                                    <p>e-mail: info@philipmartins.by</p>
+                                    <p>Присоединяйтесь к числу наших партнеров прямо сейчас!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qa-item" data-spoiler>
+                            <div class="qa-item__header">
+                                <div class="qa-item__title">В чем преимущество продукции бренда Philip Martin's перед другими брендами?</div>
+                                <button type="button" class="qa-item__button" data-spoiler-control></button>
+                            </div>
+                            <div class="qa-item__content" data-spoiler-content>
+                                <div class="qa-item__wrapper">
+                                    <p>Главное преимущество Philip Martin's — это сочетание природных био-органических формул и передовых технологий. Продукция бренда не содержит токсичных химикатов, отличается высокой эффективностью, безопасностью и экологичностью.</p>
+                                    <p>Итальянское качество, инновации и философия уважения к природе делают Philip Martin's уникальным выбором для профессионалов, ценящих индивидуальность и роскошь в уходе за волосами и телом.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- .section -->
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <a href="#" class="footer__logo">
+                    <picture>
+                        <source srcset="img/footer_logo.webp" type="image/webp"><img src="img/footer_logo.png" class="img-cover" width="566" height="180" alt="">
+                    </picture>
+                </a>
+
+                <div class="footer__main">
+                    <div class="footer__section footer__section--contacts">
+                        <div class="footer__title">Наши контакты</div>
+                        <div class="footer__text">
+                            Расскажите подробнее о&nbsp;вашем запросе и&nbsp;проконсультируйтесь с&nbsp;нами по&nbsp;телефону.
+                        </div>
+                        <div class="footer__contacts">
+                            <div class="footer__address">
+                                Минск, ул. Тимирязева, д. 126, пом. 85
+                            </div>
+                            <ul class="footer__phones">
+                                <li>
+                                    <a href="tel:+375293909339" class="footer__phone">+375 (29) 390-93-39</a>
+                                </li>
+                                <li>
+                                    <a href="tel:+375293909339" class="footer__phone">+375 (29) 390-93-39</a>
+                                </li>
+                            </ul>
+                            <div class="footer__messengers">
+                                <a href="#" class="btn-messenger">
+                                    <svg class="img-cover" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <use href="img/sprites/sprite.svg#icon_tg" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="btn-messenger">
+                                    <svg class="img-cover" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <use href="img/sprites/sprite.svg#icon_viber" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="btn-messenger">
+                                    <svg class="img-cover" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <use href="img/sprites/sprite.svg#icon_whatsapp" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="footer__email">
+                                <a href="mailto:info@tangallery.by">info@tangallery.by</a>
+                            </div>
+                            <div class="footer__docs">
+                                Реквизиты (<a href="#">Скачать</a>)
+                            </div>
+                        </div>
+                        <div class=""></div>
+                    </div><!-- .footer__section -->
+                    <div class="footer__section footer__section--form">
+                        <div class="footer__title">Форма обратной связи</div>
+                        <div class="footer__form">
+                            <form>
+                                <div class="footer__field">
+                                    <label class="form-label" for="footer_name">Привет, меня зовут *</label>
+                                    <input type="text" class="field" name="name" id="footer_name" placeholder="Александра">
+                                </div>
+                                <div class="footer__field">
+                                    <label class="form-label" for="footer_phone">Свяжитесь со мной по телефону*</label>
+                                    <input type="text" class="field" name="phone" id="footer_phone" placeholder="+ XXX (XX) XXX XX XX">
+                                </div>
+                                <div class="footer__field">
+                                    <label class="form-label" for="footer_email">Или по электронной почте</label>
+                                    <input type="text" class="field" name="email" id="footer_email" placeholder="info@likeit.pro">
+                                </div>
+                                <div class="footer__field">
+                                    <label class="checkbox checkbox--white">
+                                        <input type="checkbox" class="checkbox__input" checked>
+                                        <i class="checkbox__item"></i>
+                                        <span class="checkbox__label">Согласен на обработку <a href="#">персональныx данных*</a></span>
+                                    </label>
+                                </div>
+                                <div class="footer__button">
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <span>Отправить заявку</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div><!-- .footer__section -->
+                    <div class="footer__section footer__section--info">
+                        <div class="footer__title">Реквизиты</div>
+                        <div class="footer__info">
+                            <p>
+                                &copy;&nbsp;2023 Общество с&nbsp;ограниченной ответственностью<br>
+                                &laquo;ПАРИТЕТ КОНЦЕПТ&raquo;
+                            </p>
+                            <p>
+                                УНП 692226522 Свидетельство о&nbsp;государственной регистрации &#8470;&nbsp;692226522
+                                выдано Минским райисполкомом 6&nbsp;июля 2023&nbsp;г.&nbsp;220062
+                                г. Минск улица Тимирязева д.&nbsp;126 помещение 85.
+                            </p>
+                            <p>В&nbsp;торговом реестре Республики Беларусь с&nbsp;5&nbsp;сентября 2024&nbsp;г.</p>
+                        </div>
+                        <nav class="footer__menu">
+                            <div class="footer__item">
+                                <a href="#" class="footer__link">Карта сайта</a>
+                            </div>
+                            <div class="footer__item">
+                                <a href="#" class="footer__link">Политика использования файлов cookie</a>
+                            </div>
+                            <div class="footer__item">
+                                <a href="#" class="footer__link">Политика обработки п. д.</a>
+                            </div>
+                        </nav>
+                        <a href="#" class="footer__dev">
+                            <img src="img/dev_logo.svg" width="220" height="22" class="img-cover" loading="lazy" alt="">
+                        </a>
+                    </div><!-- .footer__section -->
+                </div>
+            </div>
+        </footer><!-- .footer -->
+
+    </main>
+    <script defer src="libs/swiper/swiper.min.js"></script>
+    <script defer src="libs/slidetoggle/slidetoggle.js"></script>
+    <script defer src="libs/fancybox/fancybox.umd.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
