@@ -36,6 +36,230 @@ const mobileNav = () => {
 }
 
 const initSliders = () => {
+
+    if (document.querySelectorAll('[data-compilation]').length > 0) {
+        document.querySelectorAll('[data-compilation]').forEach((root) => {
+            const viewport = root.querySelector('.embla__viewport')
+            const container = root.querySelector('.embla__container')
+            const mq = window.matchMedia('(min-width: 1024px)')
+
+            let embla
+
+            const setSlides = () => {
+                const slides = root.querySelectorAll('.embla__slide')
+
+                if (mq.matches) {
+                    slides.forEach(slide => {
+                        slide.style.flex = '0 0 calc((100% - 36px) / 4)'
+                    })
+                } else {
+                    slides.forEach(slide => {
+                        slide.style.flex = '0 0 284px'
+                    })
+                }
+            }
+
+            const create = (dragEnabled) => {
+                embla = EmblaCarousel(viewport, {
+                    loop: false,
+                    align: 'start',
+                    containScroll: 'trimSnaps',
+                    dragFree: false,
+                    watchDrag: dragEnabled
+                })
+            }
+
+            const destroy = () => {
+                if (embla) embla.destroy()
+            }
+
+            const updateDrag = () => {
+                const canScroll =
+                    container.scrollWidth > container.clientWidth + 1
+
+                destroy()
+                create(canScroll)
+            }
+
+            const update = () => {
+                setSlides()
+
+                requestAnimationFrame(() => {
+                    updateDrag()
+                })
+            }
+
+            mq.addEventListener('change', update)
+
+            update()
+        })
+    }
+
+    if (document.querySelectorAll('[data-product-gallery]').length > 0) {
+        document.querySelectorAll('[data-product-gallery]').forEach((root) => {
+            const viewport = root.querySelector('.embla__viewport')
+            const container = root.querySelector('.embla__container')
+            const mq = window.matchMedia('(min-width: 768px)')
+
+            let embla
+            let dotsContainer
+
+            const setSlides = () => {
+                const slides = root.querySelectorAll('.embla__slide')
+
+                if (mq.matches) {
+                    slides.forEach(slide => {
+                        slide.style.flex = '0 0 calc(50% - 12px)'
+                    })
+                } else {
+                    slides.forEach(slide => {
+                        slide.style.flex = '0 0 100%'
+                    })
+                }
+            }
+
+            const createDots = () => {
+                const slides = embla.slideNodes()
+                dotsContainer = root.querySelector('.embla__dots')
+
+                if (!dotsContainer) {
+                    dotsContainer = document.createElement('div')
+                    dotsContainer.className = 'embla__dots'
+                    root.appendChild(dotsContainer)
+                }
+
+                dotsContainer.innerHTML = ''
+
+                slides.forEach((_, index) => {
+                    const dot = document.createElement('button')
+                    dot.className = 'embla__dot'
+                    dot.type = 'button'
+
+                    dot.addEventListener('click', () => {
+                        embla.scrollTo(index)
+                    })
+
+                    dotsContainer.appendChild(dot)
+                })
+            }
+
+            const updateDots = () => {
+                if (!dotsContainer) return
+
+                const selectedIndex = embla.selectedScrollSnap()
+
+                dotsContainer.querySelectorAll('.embla__dot').forEach((dot, index) => {
+                    dot.classList.toggle('is-active', index === selectedIndex)
+                })
+            }
+
+            const create = (dragEnabled) => {
+                embla = EmblaCarousel(viewport, {
+                    loop: false,
+                    align: 'start',
+                    containScroll: 'trimSnaps',
+                    dragFree: false,
+                    watchDrag: dragEnabled
+                })
+
+                createDots()
+                updateDots()
+
+                embla.on('select', updateDots)
+                embla.on('reInit', () => {
+                    createDots()
+                    updateDots()
+                })
+            }
+
+            const destroy = () => {
+                if (embla) embla.destroy()
+            }
+
+            const updateDrag = () => {
+                const canScroll =
+                    container.scrollWidth > container.clientWidth + 1
+
+                destroy()
+                create(canScroll)
+            }
+
+            const update = () => {
+                setSlides()
+
+                requestAnimationFrame(() => {
+                    updateDrag()
+                })
+            }
+
+            mq.addEventListener('change', update)
+
+            update()
+        })
+    }
+
+    if (document.querySelectorAll('[data-hero]').length > 0) {
+        document.querySelectorAll('[data-hero]').forEach((root) => {
+            const viewport = root.querySelector('.embla__viewport')
+            const container = root.querySelector('.embla__container')
+            const mq = window.matchMedia('(min-width: 768px)')
+
+            let embla
+
+            const setSlides = () => {
+                const slides = root.querySelectorAll('.embla__slide')
+
+                if (mq.matches) {
+                    // ≥ 768px → 2 слайда
+                    slides.forEach(slide => {
+                        slide.style.flex = '0 0 calc(50% - 12px)'
+                    })
+                } else {
+                    // < 768px → 1 слайд
+                    slides.forEach(slide => {
+                        slide.style.flex = '0 0 100%'
+                    })
+                }
+            }
+
+            const create = (dragEnabled) => {
+                embla = EmblaCarousel(viewport, {
+                    loop: false,
+                    align: 'start',
+                    containScroll: 'trimSnaps',
+                    dragFree: false,
+                    watchDrag: dragEnabled
+                })
+            }
+
+            const destroy = () => {
+                if (embla) embla.destroy()
+            }
+
+            const updateDrag = () => {
+                const canScroll =
+                    container.scrollWidth > container.clientWidth + 1
+
+                destroy()
+                create(canScroll)
+            }
+
+            const update = () => {
+                setSlides()
+
+                requestAnimationFrame(() => {
+                    updateDrag()
+                })
+            }
+
+            mq.addEventListener('change', update)
+
+            update()
+        })
+    }
+}
+
+const initSliders__23 = () => {
     if (document.querySelector('[data-hero]')) {
         new Swiper('[data-hero]', {
             loop: true,
@@ -62,14 +286,15 @@ const initSliders = () => {
         new Swiper('[data-compilation]', {
             loop: false,
             observer: true,
+            cssMode: false,
+            watchSlidesProgress: false,
             roundLengths: true,
-            observeParents: true,
+            observeParents: false,
             slidesPerView: 'auto',
             spaceBetween: 6,
             speed: 500,
             breakpoints: {
                 768: {
-                    slidesPerView: 'auto',
                     spaceBetween: 12,
                 },
                 1024: {
@@ -81,31 +306,6 @@ const initSliders = () => {
         });
     }
 
-    if (document.querySelector('[data-libs]')) {
-        new Swiper('[data-libs]', {
-            loop: true,
-            observer: true,
-            observeParents: true,
-            slidesPerView: 'auto',
-            spaceBetween: 60,
-            speed: 6500,
-            autoplay: {
-                delay: 0,
-                disableOnInteraction: false,
-            },
-            breakpoints: {
-                1200: {
-                    slidesPerView: 'auto',
-                    spaceBetween: 80,
-                },
-                1440: {
-                    slidesPerView: 'auto',
-                    spaceBetween: 100,
-                },
-            },
-            on: {}
-        });
-    }
 
     if (document.querySelector('[data-product-gallery]')) {
         new Swiper('[data-product-gallery]', {

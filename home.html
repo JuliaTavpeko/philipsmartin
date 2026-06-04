@@ -14,7 +14,6 @@
     <meta property="og:site_name" content="Имя сайта...">
     <meta property="og:locale" content="ru_RU">
     <link rel="stylesheet" href="libs/normalize/normalize.min.css" />
-    <link rel="stylesheet" href="libs/swiper/swiper.min.css" />
     <link rel="stylesheet" href="libs/fancybox/fancybox.css" />
     <link rel="stylesheet" href="css/main.min.css" />
 
@@ -219,12 +218,8 @@
                     </div>
                 </div>
             </div>
-            <video src="mainbanner.mp4" autoplay loop muted playsinline width="574" height="76" class="img-cover"></video>
+            <video src="media/mainbanner.mp4" autoplay loop muted playsinline width="574" height="76" class="img-cover"></video>
 
-            <!--<picture>
-                <source media="(min-width: 1024)" srcset="img/primary_bg.jpg" />
-                <img src="img/primary_bg_sm.jpg" width="786" height="906" class="img-cover" loading="lazy" alt="">
-            </picture>-->
         </div><!-- .primary -->
 
         <div class="section">
@@ -327,52 +322,54 @@
             </div>
 
             <div class="container-fluid">
-                <div class="swiper compilation-slider" data-compilation>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="item">
-                                <i class="item__image">
-                                    <picture>
-                                        <source srcset="img/content/item_image_04.webp" type="image/webp"><img src="img/content/item_image_04.jpg" class="img-fluid" alt="">
-                                    </picture>
-                                </i>
-                                <div class="item__content">
-                                    <div class="item__heading">Домашний уход</div>
-                                    <div class="item__button">
-                                        <a href="catalog.html" class="btn btn-outline-secondary">В каталог</a>
+                <div class="compilation-slider embla" data-compilation>
+                    <div class="embla__viewport">
+                        <div class="embla__container">
+                            <div class="embla__slide">
+                                <div class="item">
+                                    <i class="item__image">
+                                        <picture>
+                                            <source srcset="img/content/item_image_04.webp" type="image/webp"><img src="img/content/item_image_04.jpg" class="img-fluid" alt="">
+                                        </picture>
+                                    </i>
+                                    <div class="item__content">
+                                        <div class="item__heading">Домашний уход</div>
+                                        <div class="item__button">
+                                            <a href="catalog.html" class="btn btn-outline-secondary">В каталог</a>
+                                        </div>
                                     </div>
-                                </div>
-                            </div><!-- .item -->
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="item">
-                                <i class="item__image">
-                                    <picture>
-                                        <source srcset="img/content/item_image_05.webp" type="image/webp"><img src="img/content/item_image_05.jpg" class="img-fluid" alt="">
-                                    </picture>
-                                </i>
-                                <span class="item__title">Очищающий скраб для кожи головы Philip Martin's Scalp Scrub</span>
-                            </a><!-- .item -->
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="item">
-                                <i class="item__image">
-                                    <picture>
-                                        <source srcset="img/content/item_image_06.webp" type="image/webp"><img src="img/content/item_image_06.jpg" class="img-fluid" alt="">
-                                    </picture>
-                                </i>
-                                <span class="item__title">Шампунь для стимуляции волос Philip Martin's Canapa Wash</span>
-                            </a><!-- .item -->
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="item">
-                                <i class="item__image">
-                                    <picture>
-                                        <source srcset="img/content/item_image_07.webp" type="image/webp"><img src="img/content/item_image_07.jpg" class="img-fluid" alt="">
-                                    </picture>
-                                </i>
-                                <span class="item__title">Несмываемый спрей для волос Philip Martin's Fill 4 Leave-In Medium, 100 ml</span>
-                            </a><!-- .item -->
+                                </div><!-- .item -->
+                            </div>
+                            <div class="embla__slide">
+                                <a href="product.html" class="item">
+                                    <i class="item__image">
+                                        <picture>
+                                            <source srcset="img/content/item_image_05.webp" type="image/webp"><img src="img/content/item_image_05.jpg" class="img-fluid" alt="">
+                                        </picture>
+                                    </i>
+                                    <span class="item__title">Очищающий скраб для кожи головы Philip Martin's Scalp Scrub</span>
+                                </a><!-- .item -->
+                            </div>
+                            <div class="embla__slide">
+                                <a href="product.html" class="item">
+                                    <i class="item__image">
+                                        <picture>
+                                            <source srcset="img/content/item_image_06.webp" type="image/webp"><img src="img/content/item_image_06.jpg" class="img-fluid" alt="">
+                                        </picture>
+                                    </i>
+                                    <span class="item__title">Шампунь для стимуляции волос Philip Martin's Canapa Wash</span>
+                                </a><!-- .item -->
+                            </div>
+                            <div class="embla__slide">
+                                <a href="product.html" class="item">
+                                    <i class="item__image">
+                                        <picture>
+                                            <source srcset="img/content/item_image_07.webp" type="image/webp"><img src="img/content/item_image_07.jpg" class="img-fluid" alt="">
+                                        </picture>
+                                    </i>
+                                    <span class="item__title">Несмываемый спрей для волос Philip Martin's Fill 4 Leave-In Medium, 100 ml</span>
+                                </a><!-- .item -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -404,47 +401,49 @@
 
         <div class="section">
             <div class="container-fluid">
-                <div class="swiper compilation-slider" data-compilation>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a href="#" class="item">
-                                <i class="item__image">
-                                    <picture>
-                                        <source srcset="img/content/item_image_08.webp" type="image/webp"><img src="img/content/item_image_08.jpg" class="img-cover" alt="">
-                                    </picture>
-                                </i>
-                                <span class="item__title">Парфюм Philip Martin's Ty</span>
-                            </a><!-- .item -->
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="item">
-                                <i class="item__image">
-                                    <picture>
-                                        <source srcset="img/content/item_image_09.webp" type="image/webp"><img src="img/content/item_image_09.jpg" class="img-cover" alt="">
-                                    </picture>
-                                </i>
-                                <span class="item__title">Диффузор Philip Martin's Home In Amber</span>
-                            </a><!-- .item -->
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="item">
-                                <i class="item__image">
-                                    <picture>
-                                        <source srcset="img/content/item_image_10.webp" type="image/webp"><img src="img/content/item_image_10.jpg" class="img-cover" alt="">
-                                    </picture>
-                                </i>
-                                <span class="item__title">Парфюмированная свеча Philip Martin's Fume' Candle</span>
-                            </a><!-- .item -->
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="item">
-                                <i class="item__image">
-                                    <picture>
-                                        <source srcset="img/content/item_image_11.webp" type="image/webp"><img src="img/content/item_image_11.jpg" class="img-cover" alt="">
-                                    </picture>
-                                </i>
-                                <span class="item__title">Парфюм Philip Martin's Aplomb</span>
-                            </a><!-- .item -->
+                <div class="compilation-slider embla" data-compilation>
+                    <div class="embla__viewport">
+                        <div class="embla__container">
+                            <div class="embla__slide">
+                                <a href="product.html" class="item">
+                                    <i class="item__image">
+                                        <picture>
+                                            <source srcset="img/content/item_image_08.webp" type="image/webp"><img src="img/content/item_image_08.jpg" class="img-cover" alt="">
+                                        </picture>
+                                    </i>
+                                    <span class="item__title">Парфюм Philip Martin's Ty</span>
+                                </a><!-- .item -->
+                            </div>
+                            <div class="embla__slide">
+                                <a href="product.html" class="item">
+                                    <i class="item__image">
+                                        <picture>
+                                            <source srcset="img/content/item_image_09.webp" type="image/webp"><img src="img/content/item_image_09.jpg" class="img-cover" alt="">
+                                        </picture>
+                                    </i>
+                                    <span class="item__title">Диффузор Philip Martin's Home In Amber</span>
+                                </a><!-- .item -->
+                            </div>
+                            <div class="embla__slide">
+                                <a href="product.html" class="item">
+                                    <i class="item__image">
+                                        <picture>
+                                            <source srcset="img/content/item_image_10.webp" type="image/webp"><img src="img/content/item_image_10.jpg" class="img-cover" alt="">
+                                        </picture>
+                                    </i>
+                                    <span class="item__title">Парфюмированная свеча Philip Martin's Fume' Candle</span>
+                                </a><!-- .item -->
+                            </div>
+                            <div class="embla__slide">
+                                <a href="product.html" class="item">
+                                    <i class="item__image">
+                                        <picture>
+                                            <source srcset="img/content/item_image_11.webp" type="image/webp"><img src="img/content/item_image_11.jpg" class="img-cover" alt="">
+                                        </picture>
+                                    </i>
+                                    <span class="item__title">Парфюм Philip Martin's Aplomb</span>
+                                </a><!-- .item -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -476,52 +475,54 @@
 
         <div class="section">
             <div class="container-fluid">
-                <div class="swiper compilation-slider" data-compilation>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="item">
-                                <i class="item__image">
-                                    <picture>
-                                        <source srcset="img/content/item_image_12.webp" type="image/webp"><img src="img/content/item_image_12.jpg" class="img-cover" alt="">
-                                    </picture>
-                                </i>
-                                <div class="item__content">
-                                    <div class="item__heading">Профессиональный уход</div>
-                                    <div class="item__button">
-                                        <a href="catalog.html" class="btn btn-outline-secondary">В каталог</a>
+                <div class="compilation-slider embla" data-compilation>
+                    <div class="embla__viewport">
+                        <div class="embla__container">
+                            <div class="embla__slide">
+                                <div class="item">
+                                    <i class="item__image">
+                                        <picture>
+                                            <source srcset="img/content/item_image_12.webp" type="image/webp"><img src="img/content/item_image_12.jpg" class="img-cover" alt="">
+                                        </picture>
+                                    </i>
+                                    <div class="item__content">
+                                        <div class="item__heading">Профессиональный уход</div>
+                                        <div class="item__button">
+                                            <a href="catalog.html" class="btn btn-outline-secondary">В каталог</a>
+                                        </div>
                                     </div>
-                                </div>
-                            </div><!-- .item -->
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="item">
-                                <i class="item__image">
-                                    <picture>
-                                        <source srcset="img/content/item_image_13.webp" type="image/webp"><img src="img/content/item_image_13.jpg" class="img-cover" alt="">
-                                    </picture>
-                                </i>
-                                <span class="item__title">Краска для волос Philip Martin's Color Slide 8.0 Light Blonde</span>
-                            </a><!-- .item -->
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="item">
-                                <i class="item__image">
-                                    <picture>
-                                        <source srcset="img/content/item_image_14.webp" type="image/webp"><img src="img/content/item_image_14.jpg" class="img-cover" alt="">
-                                    </picture>
-                                </i>
-                                <span class="item__title">Крем-окислитель 12% Philip Martin's Activator 40 Vol (12%)</span>
-                            </a><!-- .item -->
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="item">
-                                <i class="item__image">
-                                    <picture>
-                                        <source srcset="img/content/item_image_15.webp" type="image/webp"><img src="img/content/item_image_15.jpg" class="img-cover" alt="">
-                                    </picture>
-                                </i>
-                                <span class="item__title">Профессиональный безаммиачный полуперманентный краситель Philip Martin's Glitch</span>
-                            </a><!-- .item -->
+                                </div><!-- .item -->
+                            </div>
+                            <div class="embla__slide">
+                                <a href="product.html" class="item">
+                                    <i class="item__image">
+                                        <picture>
+                                            <source srcset="img/content/item_image_13.webp" type="image/webp"><img src="img/content/item_image_13.jpg" class="img-cover" alt="">
+                                        </picture>
+                                    </i>
+                                    <span class="item__title">Краска для волос Philip Martin's Color Slide 8.0 Light Blonde</span>
+                                </a><!-- .item -->
+                            </div>
+                            <div class="embla__slide">
+                                <a href="product.html" class="item">
+                                    <i class="item__image">
+                                        <picture>
+                                            <source srcset="img/content/item_image_14.webp" type="image/webp"><img src="img/content/item_image_14.jpg" class="img-cover" alt="">
+                                        </picture>
+                                    </i>
+                                    <span class="item__title">Крем-окислитель 12% Philip Martin's Activator 40 Vol (12%)</span>
+                                </a><!-- .item -->
+                            </div>
+                            <div class="embla__slide">
+                                <a href="product.html" class="item">
+                                    <i class="item__image">
+                                        <picture>
+                                            <source srcset="img/content/item_image_15.webp" type="image/webp"><img src="img/content/item_image_15.jpg" class="img-cover" alt="">
+                                        </picture>
+                                    </i>
+                                    <span class="item__title">Профессиональный безаммиачный полуперманентный краситель Philip Martin's Glitch</span>
+                                </a><!-- .item -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -738,7 +739,7 @@
         </footer><!-- .footer -->
 
     </main>
-    <script defer src="libs/swiper/swiper.min.js"></script>
+    <script defer src="libs/embla-carousel/embla-carousel.umd.js"></script>
     <script defer src="libs/slidetoggle/slidetoggle.js"></script>
     <script defer src="libs/fancybox/fancybox.umd.js"></script>
     <script src="js/app.js"></script>

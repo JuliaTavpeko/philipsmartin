@@ -21,6 +21,19 @@
   width: 14.75rem;
   margin: 0 auto 3.125rem auto;
 }
+.hero .embla {
+  overflow: hidden;
+}
+.hero .embla__viewport {
+  overflow: hidden;
+}
+.hero .embla__container {
+  display: flex;
+}
+.hero .embla__slide {
+  flex: 0 0 100%; /* mobile = 1 slide */
+  min-width: 0;
+}
 @media (min-width: 768px) {
   .hero__logo {
     width: 17.625rem;

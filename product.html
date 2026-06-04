@@ -14,7 +14,6 @@
     <meta property="og:site_name" content="Имя сайта...">
     <meta property="og:locale" content="ru_RU">
     <link rel="stylesheet" href="libs/normalize/normalize.min.css" />
-    <link rel="stylesheet" href="libs/swiper/swiper.min.css" />
     <link rel="stylesheet" href="libs/fancybox/fancybox.css" />
     <link rel="stylesheet" href="css/main.min.css" />
 
@@ -213,38 +212,26 @@
                 <div class="product">
                     <div class="product__media">
                         <div class="product__gallery">
-                            <div class="swiper" data-product-gallery>
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <a href="img/content/product_image_01.jpg" class="product__image" data-fancybox="gallery">
-                                            <picture>
-                                                <source srcset="img/content/product_image_01.webp" type="image/webp"><img src="img/content/product_image_01.jpg" class="img-cover" width="1160" height="1526" loading="lazy" alt="">
-                                            </picture>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="img/content/product_image_02.jpg" class="product__image" data-fancybox="gallery">
-                                            <picture>
-                                                <source srcset="img/content/product_image_02.webp" type="image/webp"><img src="img/content/product_image_02.jpg" class="img-cover" width="1160" height="1526" loading="lazy" alt="">
-                                            </picture>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="img/content/product_image_01.jpg" class="product__image" data-fancybox="gallery">
-                                            <picture>
-                                                <source srcset="img/content/product_image_01.webp" type="image/webp"><img src="img/content/product_image_01.jpg" class="img-cover" width="1160" height="1526" loading="lazy" alt="">
-                                            </picture>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="img/content/product_image_02.jpg" class="product__image" data-fancybox="gallery">
-                                            <picture>
-                                                <source srcset="img/content/product_image_02.webp" type="image/webp"><img src="img/content/product_image_02.jpg" class="img-cover" width="1160" height="1526" loading="lazy" alt="">
-                                            </picture>
-                                        </a>
+                            <div class="embla" data-product-gallery>
+                                <div class="embla__viewport">
+                                    <div class="embla__container">
+                                        <div class="embla__slide">
+                                            <a href="img/content/product_image_01.jpg" class="product__image" data-fancybox="gallery">
+                                                <picture>
+                                                    <source srcset="img/content/product_image_01.webp" type="image/webp"><img src="img/content/product_image_01.jpg" class="img-cover" width="1160" height="1526" loading="lazy" alt="">
+                                                </picture>
+                                            </a>
+                                        </div>
+                                        <div class="embla__slide">
+                                            <a href="img/content/product_image_02.jpg" class="product__image" data-fancybox="gallery">
+                                                <picture>
+                                                    <source srcset="img/content/product_image_02.webp" type="image/webp"><img src="img/content/product_image_02.jpg" class="img-cover" width="1160" height="1526" loading="lazy" alt="">
+                                                </picture>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="swiper-pagination" data-product-pagination></div>
+                                <div class="embla__dots" data-product-pagination></div>
                             </div>
                         </div>
                     </div>
@@ -342,47 +329,49 @@
                 <div class="section">
                     <div class="section__header">Вам так же могут понравится</div>
                     <div class="section__body">
-                        <div class="swiper compilation-slider" data-compilation>
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <a href="#" class="item">
-                                        <i class="item__image">
-                                            <picture>
-                                                <source srcset="img/content/item_image_01.webp" type="image/webp"><img src="img/content/item_image_01.jpg" class="img-cover" alt="">
-                                            </picture>
-                                        </i>
-                                        <span class="item__title">Philip Martin&rsquo;s Air Lacca Mini Hairspray Medium, 100&nbsp;ml</span>
-                                    </a><!-- .item -->
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="#" class="item">
-                                        <i class="item__image">
-                                            <picture>
-                                                <source srcset="img/content/item_image_02.webp" type="image/webp"><img src="img/content/item_image_02.jpg" class="img-cover" alt="">
-                                            </picture>
-                                        </i>
-                                        <span class="item__title">Philip Martin&rsquo;s Air Lacca Mini Hairspray Medium, 100&nbsp;ml</span>
-                                    </a><!-- .item -->
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="#" class="item">
-                                        <i class="item__image">
-                                            <picture>
-                                                <source srcset="img/content/item_image_03.webp" type="image/webp"><img src="img/content/item_image_03.jpg" class="img-cover" alt="">
-                                            </picture>
-                                        </i>
-                                        <span class="item__title">Philip Martin&rsquo;s Air Lacca Mini Hairspray Medium, 100&nbsp;ml</span>
-                                    </a><!-- .item -->
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="#" class="item">
-                                        <i class="item__image">
-                                            <picture>
-                                                <source srcset="img/content/item_image_01.webp" type="image/webp"><img src="img/content/item_image_01.jpg" class="img-cover" alt="">
-                                            </picture>
-                                        </i>
-                                        <span class="item__title">Philip Martin&rsquo;s Air Lacca Mini Hairspray Medium, 100&nbsp;ml</span>
-                                    </a><!-- .item -->
+                        <div class="compilation-slider embla" data-compilation>
+                            <div class="embla__viewport">
+                                <div class="embla__container">
+                                    <div class="embla__slide">
+                                        <a href="#" class="item">
+                                            <i class="item__image">
+                                                <picture>
+                                                    <source srcset="img/content/item_image_01.webp" type="image/webp"><img src="img/content/item_image_01.jpg" class="img-cover" alt="">
+                                                </picture>
+                                            </i>
+                                            <span class="item__title">Philip Martin&rsquo;s Air Lacca Mini Hairspray Medium, 100&nbsp;ml</span>
+                                        </a><!-- .item -->
+                                    </div>
+                                    <div class="embla__slide">
+                                        <a href="#" class="item">
+                                            <i class="item__image">
+                                                <picture>
+                                                    <source srcset="img/content/item_image_02.webp" type="image/webp"><img src="img/content/item_image_02.jpg" class="img-cover" alt="">
+                                                </picture>
+                                            </i>
+                                            <span class="item__title">Philip Martin&rsquo;s Air Lacca Mini Hairspray Medium, 100&nbsp;ml</span>
+                                        </a><!-- .item -->
+                                    </div>
+                                    <div class="embla__slide">
+                                        <a href="#" class="item">
+                                            <i class="item__image">
+                                                <picture>
+                                                    <source srcset="img/content/item_image_03.webp" type="image/webp"><img src="img/content/item_image_03.jpg" class="img-cover" alt="">
+                                                </picture>
+                                            </i>
+                                            <span class="item__title">Philip Martin&rsquo;s Air Lacca Mini Hairspray Medium, 100&nbsp;ml</span>
+                                        </a><!-- .item -->
+                                    </div>
+                                    <div class="embla__slide">
+                                        <a href="#" class="item">
+                                            <i class="item__image">
+                                                <picture>
+                                                    <source srcset="img/content/item_image_01.webp" type="image/webp"><img src="img/content/item_image_01.jpg" class="img-cover" alt="">
+                                                </picture>
+                                            </i>
+                                            <span class="item__title">Philip Martin&rsquo;s Air Lacca Mini Hairspray Medium, 100&nbsp;ml</span>
+                                        </a><!-- .item -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -509,7 +498,7 @@
         </footer><!-- .footer -->
 
     </main>
-    <script defer src="libs/swiper/swiper.min.js"></script>
+    <script defer src="libs/embla-carousel/embla-carousel.umd.js"></script>
     <script defer src="libs/slidetoggle/slidetoggle.js"></script>
     <script defer src="libs/fancybox/fancybox.umd.js"></script>
     <script src="js/app.js"></script>

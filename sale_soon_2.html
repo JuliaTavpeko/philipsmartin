@@ -14,7 +14,6 @@
     <meta property="og:site_name" content="Имя сайта...">
     <meta property="og:locale" content="ru_RU">
     <link rel="stylesheet" href="libs/normalize/normalize.min.css" />
-    <link rel="stylesheet" href="libs/swiper/swiper.min.css" />
     <link rel="stylesheet" href="libs/fancybox/fancybox.css" />
     <link rel="stylesheet" href="css/main.min.css" />
 
@@ -249,22 +248,24 @@
             </div>
         </div>
         <div class="hero">
-            <div class="swiper" data-hero>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="hero__media">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="img/sale_image_02_xl.jpg" />
-                                <img src="img/sale_image_02.jpg" width="960" height="1200" class="img-cover" loading="lazy" alt="">
-                            </picture>
+            <div class="embla" data-hero>
+                <div class="embla__viewport">
+                    <div class="embla__container">
+                        <div class="embla__slide">
+                            <div class="hero__media">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="img/sale_image_02_xl.jpg" />
+                                    <img src="img/sale_image_02.jpg" width="960" height="1200" class="img-cover" loading="lazy" alt="">
+                                </picture>
+                            </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="hero__media">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="img/sale_image_03_xl.jpg" />
-                                <img src="img/sale_image_03.jpg" width="960" height="1200" class="img-cover" loading="lazy" alt="">
-                            </picture>
+                        <div class="embla__slide">
+                            <div class="hero__media">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="img/sale_image_03_xl.jpg" />
+                                    <img src="img/sale_image_03.jpg" width="960" height="1200" class="img-cover" loading="lazy" alt="">
+                                </picture>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -443,7 +444,7 @@
         </footer><!-- .footer -->
 
     </main>
-    <script defer src="libs/swiper/swiper.min.js"></script>
+    <script defer src="libs/embla-carousel/embla-carousel.umd.js"></script>
     <script defer src="libs/slidetoggle/slidetoggle.js"></script>
     <script defer src="libs/fancybox/fancybox.umd.js"></script>
     <script src="js/app.js"></script>
